@@ -1,0 +1,28 @@
+{
+  "name": "student-academic-tutor",
+  "version": "1.2.0",
+  "description": "An adaptive, evidence-informed academic teaching intelligence.",
+  "entrypoint": "SKILL.md",
+  "compatibility": {
+    "manus": true,
+    "codex": true,
+    "gemini": true,
+    "claude": true,
+    "chatgpt_custom_gpts": true,
+    "open_webui": true
+  },
+  "modules": {
+    "core": "core/",
+    "engines": "engines/",
+    "subjects": "subjects/",
+    "curricula": "curricula/",
+    "pedagogy": "pedagogy/",
+    "modes": "modes/",
+    "assessments": "assessments/",
+    "references": "references/",
+    "evaluation": "evaluation/"
+  },
+  "supported_curricula_count": 21,
+  "supported_subjects_count": 13,
+  "supported_modes_count": 7
+}
