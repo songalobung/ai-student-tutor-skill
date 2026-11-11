@@ -5,7 +5,7 @@
 ### *An Evidence-Informed, Cross-Platform Instructional Architecture for LLM Agents*
 
 [![License: Apache 2.0](https://img.shields.io/badge/License-Apache%202.0-blue.svg?style=for-the-badge)](https://opensource.org/licenses/Apache-2.0)
-[![Version](https://img.shields.io/badge/version-1.6.0-orange.svg?style=for-the-badge)]()
+[![Version](https://img.shields.io/badge/version-2.0.0-orange.svg?style=for-the-badge)]()
 [![Platform: Cross-LLM](https://img.shields.io/badge/Platform-Claude%20%7C%20Gemini%20%7C%20Codex%20%7C%20Manus-8A2BE2.svg?style=for-the-badge)](docs/installation/platform-setup.md)
 [![Curricula: 30 Supported](https://img.shields.io/badge/Curricula-30%20Verified%20Guides-success.svg?style=for-the-badge)](curricula/source-registry/verified-sources.md)
 [![Subjects: 20 Specialisms](https://img.shields.io/badge/Subjects-20%20Engines-brightgreen.svg?style=for-the-badge)]()
@@ -16,6 +16,7 @@
 <br/>
 
 **[Executive Overview](#-overview)** •
+**[Portable Distributions (v2.0)](#-portable-multi-platform-distribution-v20)** •
 **[File Tree & Structure](#-complete-file-structure)** •
 **[Module Directory & Descriptions](#-module-directory--file-reference-table)** •
 **[Student Intelligence](#-student-intelligence-layer)** •
@@ -62,6 +63,73 @@ This skill provides an operational framework that:
 ```
 
 ---
+
+
+---
+
+## 📦 Portable Multi-Platform Distribution (v2.0)
+
+To overcome upload limits and token restrictions across modern AI platforms (ChatGPT Custom GPTs, Claude Projects, Gemini Gems, NotebookLM, Manus, and local LLMs), version 2.0 introduces a **dual distribution architecture**:
+
+```
+┌────────────────────────────────────────────────────────────────────────────────────────┐
+│                                 TWO WAYS TO USE THIS REPOSITORY                        │
+├───────────────────────────────────────────┬────────────────────────────────────────────┤
+│ 1. SINGLE-FILE PORTABLE CORE              │ 2. MODULAR KNOWLEDGE EXTENSIONS            │
+│    dist/portable/AI-STUDENT-TUTOR.md      │    dist/packs/                             │
+│    • 100% self-contained Socratic core    │    • Optional domain packs (STEM, Law, AP) │
+│    • Only ~5,300 tokens (< 30k limit)     │    • Add only the subjects/curricula you   │
+│    • Zero relative links or broken paths  │      need without blowing upload limits    │
+│    • Uploads in seconds to ANY platform   │    • Pre-built platform ZIPs in dist/zips/ │
+└───────────────────────────────────────────┴────────────────────────────────────────────┘
+```
+
+### 🚀 Platform Quick-Start Matrix
+
+| Platform | Recommended Package | Configuration Method | Upload File Count |
+| :--- | :--- | :--- | :---: |
+| **ChatGPT (Custom GPT / Team Project)** | [`dist/platforms/chatgpt/`](dist/platforms/chatgpt/) | Paste `instructions.txt` (under 8k chars) into GPT Instructions; upload 12 files from `knowledge/` | 12 files (limit: 20) |
+| **Claude Projects (Claude.ai Pro / Team)** | [`dist/platforms/claude/`](dist/platforms/claude/) | Paste `project-instructions.md` into Project Instructions; upload `knowledge/` folder (fits 200k context) | 8 files |
+| **Google Gemini & NotebookLM** | [`dist/platforms/gemini/`](dist/platforms/gemini/) | Paste `gemini-system-instructions.md` into AI Studio or Gem; upload `gemini-context-bundle.md` to NotebookLM | 1-2 files |
+| **Manus Agent Workspace** | [`dist/platforms/manus/`](dist/platforms/manus/) | Copy directory into `.manus/skills/ai-student-tutor`; entrypoint `SKILL.md` + `manifest.json` | 4 files |
+| **Universal (Ollama / Open WebUI / APIs)** | [`dist/platforms/universal/`](dist/platforms/universal/) | Run `ollama create ai-student-tutor -f Modelfile` or import `open-webui-preset.json` into Open WebUI | 1 file |
+
+### 📚 Modular Knowledge Packs Catalog (`dist/packs/`)
+
+Users can attach only the specific knowledge packs relevant to their subject, curriculum, or instructional focus:
+
+| Category | Knowledge Pack File | Raw Size | Est. Tokens | Primary Educational Scope |
+| :--- | :--- | :---: | :---: | :--- |
+| **Subjects** | [`subjects/stem-sciences.md`](dist/packs/subjects/stem-sciences.md) | 58.4 KB | ~14,944 | Math, Physics, Chemistry, Biology, CS, Statistics |
+| **Subjects** | [`subjects/humanities-social-sciences.md`](dist/packs/subjects/humanities-social-sciences.md) | 74.6 KB | ~19,088 | History, Geography, Economics, Business, English, Philosophy, Psych, Sociology, Linguistics |
+| **Subjects** | [`subjects/professional-applied.md`](dist/packs/subjects/professional-applied.md) | 19.6 KB | ~5,018 | Engineering, Law, Medicine & Health, Accounting, Environmental Science |
+| **Curricula** | [`curricula/uk-and-british.md`](dist/packs/curricula/uk-and-british.md) | 39.7 KB | ~10,171 | GCSE, GCE A-Level, Cambridge IGCSE, Cambridge Int A-Level, Scotland SQA |
+| **Curricula** | [`curricula/north-america.md`](dist/packs/curricula/north-america.md) | 17.6 KB | ~4,513 | US Advanced Placement (AP), SAT & ACT, Canada Ontario OSSD |
+| **Curricula** | [`curricula/international-baccalaureate-and-higher-ed.md`](dist/packs/curricula/international-baccalaureate-and-higher-ed.md) | 23.5 KB | ~6,014 | IB DP/MYP/PYP and University Undergraduate/Postgraduate |
+| **Curricula** | [`curricula/asia-pacific.md`](dist/packs/curricula/asia-pacific.md) | 28.2 KB | ~7,218 | India CBSE, Singapore A-Level, China Gaokao, Japan Common Test, Australia VCE/HSC, NZ NCEA |
+| **Curricula** | [`curricula/africa-caribbean-latin.md`](dist/packs/curricula/africa-caribbean-latin.md) | 42.4 KB | ~10,845 | Kenya CBC, Uganda UNEB, South Sudan NEC, WAEC/WASSCE, South Africa CAPS/IEB, Caribbean CXC, Brazil ENEM |
+| **Curricula** | [`curricula/europe-and-admissions.md`](dist/packs/curricula/europe-and-admissions.md) | 32.1 KB | ~8,219 | French Baccalauréat, German Abitur, Ireland Leaving Cert, MCAT, USMLE, LSAT, GRE, GMAT, IELTS, TOEFL |
+| **Pedagogy** | [`pedagogy/learning-science-and-pedagogy.md`](dist/packs/pedagogy/learning-science-and-pedagogy.md) | 65.7 KB | ~16,808 | Retrieval practice, spacing, scaffolding, worked examples, mastery learning, metacognition |
+| **Pedagogy** | [`pedagogy/student-intelligence-and-prerequisites.md`](dist/packs/pedagogy/student-intelligence-and-prerequisites.md) | 12.6 KB | ~3,237 | Student state modeling (dual-axis Ks/Cs), misconception profiling, prerequisite dependency graphs |
+| **Exams** | [`examination/exam-intelligence-and-analytics.md`](dist/packs/examination/exam-intelligence-and-analytics.md) | 26.9 KB | ~6,896 | Past-paper reverse engineering, command words, timed mock exams, question laboratory rubrics |
+| **Voice & Vision**| [`voice-and-multimodal/voice-and-multimodal.md`](dist/packs/voice-and-multimodal/voice-and-multimodal.md) | 11.5 KB | ~2,950 | Speech-to-speech cadence, spoken math pronunciation, ASCII/Mermaid diagram standards |
+
+*Master catalog: [`dist/packs/INDEX.md`](dist/packs/INDEX.md) • Comprehensive Audit Report: [`dist/AUDIT-REPORT.md`](dist/AUDIT-REPORT.md)*
+
+### 🛠️ Automated Compilation & Verification
+
+Rebuild all portable cores, knowledge packs, platform distributions, and ZIP archives deterministically:
+
+```bash
+# Using Python (Cross-Platform)
+python scripts/build-distributions.py
+
+# Using PowerShell (Windows)
+powershell -ExecutionPolicy Bypass -File scripts/build-distributions.ps1
+
+# Run Quality Assurance & Parity Regression Suite
+python testing-suite/test_portable_distribution.py
+```
 
 ## 🏛️ The Five Defining Instructional Principles
 
@@ -241,10 +309,39 @@ student-academic-tutor/
 │
 ├── testing-suite/                            # Automated Testing & Release Gate
 │   ├── quality-system-protocol.md            # 10-gate quality verification documentation
+│   ├── test_portable_distribution.py         # QA & feature parity regression test suite
 │   └── validate-release.ps1                  # Executable PowerShell test runner script
 │
+├── dist/                                     # Portable Multi-Platform Distributions (v2.0)
+│   ├── portable/                             # Self-contained universal Socratic core
+│   │   └── AI-STUDENT-TUTOR.md               # 100% self-contained single file (< 30k tokens)
+│   ├── packs/                                # 13 modular subject, curriculum & pedagogy packs
+│   │   ├── INDEX.md                          # Master pack catalog & size reference
+│   │   ├── subjects/                         # STEM, Humanities, Professional bundled packs
+│   │   ├── curricula/                        # UK, North America, IB, Asia-Pac, Africa, Europe
+│   │   ├── pedagogy/                         # Learning sciences & student intelligence packs
+│   │   ├── examination/                      # Exam intelligence, rubrics & question lab pack
+│   │   └── voice-and-multimodal/             # Speech cadence, vision OCR & visual diagrams pack
+│   ├── platforms/                            # Platform-Optimized Configurations
+│   │   ├── chatgpt/                          # Custom GPT instructions & knowledge files
+│   │   ├── claude/                           # Project instructions & 200k context packs
+│   │   ├── gemini/                           # AI Studio / NotebookLM context bundles
+│   │   ├── manus/                            # Skill manifest & execution references
+│   │   └── universal/                        # Ollama Modelfile, Open WebUI & Python SDK
+│   ├── zips/                                 # Ready-to-download platform ZIP packages
+│   ├── AUDIT-REPORT.md                       # Comprehensive file audit & consolidation report
+│   └── manifest.json                         # Build manifest, file stats & SHA-256 checksums
+│
+├── scripts/                                  # Build & Automation Pipeline
+│   ├── build-distributions.py                # Automated build pipeline & validator
+│   ├── build-distributions.ps1               # PowerShell build runner
+│   ├── generate_portable_core.py             # Portable core generator
+│   ├── build_packs.py                        # Modular knowledge pack builder
+│   └── build_platforms.py                    # Platform distribution builder
+│
 └── docs/                                     # Setup & Platform Guides
-    └── installation/platform-setup.md        # Instructions for Claude, Gemini, Codex, Manus
+    ├── installation/platform-setup.md        # Instructions for Claude, Gemini, Codex, Manus
+    └── refactor/AUDIT-REPORT.md              # Comprehensive audit & consolidation report
 ```
 
 ---
@@ -268,6 +365,8 @@ The table below explains the specific function, responsibility, and operational 
 | **`curricula/`** | 30 verified curriculum and examination guides detailing specifications, command words, grading scales, and portal links tracked in the central source registry. | 30 guides covering secondary systems (Cambridge, IB, GCSE, A-Level, AP, CBSE, Gaokao, ENEM, Abitur, etc.) and admissions tests (SAT, ACT, GRE, GMAT, MCAT, LSAT, etc.), plus `source-registry/verified-sources.md`. |
 | **`pedagogy/`** | Evidence-based learning science implementations covering retrieval practice, expanding-interval spaced repetition, gradual release scaffolding, worked examples, mastery thresholds, and metacognition. | `retrieval-practice.md`, `spaced-repetition.md`, `scaffolding.md`, `worked-examples.md`, `mastery-learning.md`, `formative-assessment.md`, `metacognition.md` |
 | **`modes/`** | 8 primary and advanced operational interaction modes (Tutor, Homework, Exam, Revision, Practice, Explain-Again, Oral Defense, Feynman, Teach-Back, Challenge, Research Mentor). | `tutor.md`, `homework.md`, `examination.md`, `revision.md`, `practice.md`, `explain-again.md`, `oral-examination.md`, `advanced-modes-suite.md` |
+| **`dist/`** | Portable distributions and modular knowledge packages engineered to bypass platform upload and context limits. Includes the self-contained portable core, 13 modular packs, 5 platform targets, and pre-built ZIPs. | `portable/AI-STUDENT-TUTOR.md`, `packs/INDEX.md`, `platforms/`, `zips/`, `AUDIT-REPORT.md`, `manifest.json` |
+| **`scripts/`** | Deterministic automation pipeline for compiling portable distributions, modular packs, platform configurations, and validating zero instruction loss. | `build-distributions.py`, `build-distributions.ps1`, `generate_portable_core.py`, `build_packs.py`, `build_platforms.py` |
 | **`assessments/`** | Assessment instruments, diagnostic batteries, Bloom's taxonomy item-generation guidelines, standardized marking rubrics ($M, A, B, FT$ marks), and benchmark specifications. | `diagnostic-tests.md`, `question-generation.md`, `marking-rubrics.md`, `benchmark-tests.md` |
 | **`knowledge-base/`** | Empirical catalog documenting common student misconceptions, cognitive causes, diagnostic check questions, and corrective instructional sequences across core subjects. | `misconceptions/catalog.md` |
 | **`references/`** | Peer-reviewed educational research library, advanced system enhancements, and multimodal vision/voice tutoring specifications. | `research-foundations.md`, `advanced-enhancements.md`, `multimodal-protocols.md` |

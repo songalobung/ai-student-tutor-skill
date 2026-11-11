@@ -1,7 +1,7 @@
 {
   "name": "student-academic-tutor",
-  "version": "1.6.0",
-  "description": "An adaptive, evidence-informed academic teaching intelligence.",
+  "version": "2.0.0",
+  "description": "An adaptive, evidence-informed academic teaching intelligence with portable multi-platform distributions.",
   "entrypoint": "SKILL.md",
   "compatibility": {
     "manus": true,
@@ -9,7 +9,14 @@
     "gemini": true,
     "claude": true,
     "chatgpt_custom_gpts": true,
-    "open_webui": true
+    "open_webui": true,
+    "ollama": true
+  },
+  "distributions": {
+    "portable_core": "dist/portable/AI-STUDENT-TUTOR.md",
+    "packs": "dist/packs/",
+    "platforms": "dist/platforms/",
+    "manifest": "dist/manifest.json"
   },
   "modules": {
     "core": "core/",
@@ -30,7 +37,9 @@
     "references": "references/",
     "evaluation": "evaluation/",
     "testing-suite": "testing-suite/",
-    "docs": "docs/"
+    "docs": "docs/",
+    "dist": "dist/",
+    "scripts": "scripts/"
   },
   "supported_curricula_count": 30,
   "supported_subjects_count": 20,

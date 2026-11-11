@@ -1,0 +1,462 @@
+{
+  "version": "2.0.0",
+  "build_target": "Portable Universal Distribution",
+  "portable_core": {
+    "path": "dist/portable/AI-STUDENT-TUTOR.md",
+    "size": 21494,
+    "chars": 21184,
+    "words": 2687,
+    "tokens": 5296,
+    "sha256": "5febc1abd5115f1833337968682cdb23f746b6027fb71fe10336163214f5fc7b"
+  },
+  "platforms": {
+    "chatgpt": [
+      {
+        "path": "platforms/chatgpt/README.md",
+        "size": 1564,
+        "chars": 1541,
+        "words": 222,
+        "tokens": 385,
+        "sha256": "811a7b5eba7f44c2f4a9b7c6bac35f94b762c386ad1e5f2318a9720de8a21381"
+      },
+      {
+        "path": "platforms/chatgpt/instructions.txt",
+        "size": 3211,
+        "chars": 3170,
+        "words": 439,
+        "tokens": 792,
+        "sha256": "ed1c5b07d3e07886fa63932e15e94f0655c93d4e577261198eabc17e33f89271"
+      },
+      {
+        "path": "platforms/chatgpt/knowledge/01-core-tutor.md",
+        "size": 21494,
+        "chars": 21184,
+        "words": 2687,
+        "tokens": 5296,
+        "sha256": "5febc1abd5115f1833337968682cdb23f746b6027fb71fe10336163214f5fc7b"
+      },
+      {
+        "path": "platforms/chatgpt/knowledge/02-stem-sciences.md",
+        "size": 59777,
+        "chars": 57744,
+        "words": 8670,
+        "tokens": 14436,
+        "sha256": "f96784f148fae189146836f72e8829bce9ddfded559ca4de3f76a0ab5a3b98a3"
+      },
+      {
+        "path": "platforms/chatgpt/knowledge/03-humanities-social-sciences.md",
+        "size": 76352,
+        "chars": 74760,
+        "words": 10521,
+        "tokens": 18690,
+        "sha256": "b7cf5384b7a82a16e2d4a94cb1e502e9751ea159d37f3e050f51b6cc208ce6a6"
+      },
+      {
+        "path": "platforms/chatgpt/knowledge/04-professional-applied.md",
+        "size": 20072,
+        "chars": 19735,
+        "words": 2379,
+        "tokens": 4933,
+        "sha256": "95665d82e8d5bb8b4fbdb0aac5da5af71f07b7169d9ec7e1455895d320d4ae7f"
+      },
+      {
+        "path": "platforms/chatgpt/knowledge/05-uk-british-curricula.md",
+        "size": 40685,
+        "chars": 39764,
+        "words": 5974,
+        "tokens": 9941,
+        "sha256": "319d3f7724565ca84c224af8c660b40c6a236d687769fa6fe8e743e67a1c2a57"
+      },
+      {
+        "path": "platforms/chatgpt/knowledge/06-north-american-curricula.md",
+        "size": 18054,
+        "chars": 17724,
+        "words": 2381,
+        "tokens": 4431,
+        "sha256": "afc1d2bba211c1866379c5f018b9c0050b4ff1d6b051aec3574fedf3fba5d117"
+      },
+      {
+        "path": "platforms/chatgpt/knowledge/07-ib-and-university.md",
+        "size": 24056,
+        "chars": 23543,
+        "words": 3392,
+        "tokens": 5885,
+        "sha256": "96408cb5e32f316297422e918d20645a167a3e77a6e675f18a84c73a640b2cda"
+      },
+      {
+        "path": "platforms/chatgpt/knowledge/08-asia-pacific-curricula.md",
+        "size": 28872,
+        "chars": 28059,
+        "words": 3770,
+        "tokens": 7014,
+        "sha256": "613de480d6fe8f3957ab3b35914a6cfc375a2211a08e7414d7f9fdc81823509d"
+      },
+      {
+        "path": "platforms/chatgpt/knowledge/09-africa-caribbean-latin.md",
+        "size": 43380,
+        "chars": 42403,
+        "words": 5873,
+        "tokens": 10600,
+        "sha256": "91dca467dc499e4d34b8e921510a6862b37063b23625b5d58c9165ce4bb25beb"
+      },
+      {
+        "path": "platforms/chatgpt/knowledge/10-europe-and-admissions.md",
+        "size": 32876,
+        "chars": 32272,
+        "words": 4381,
+        "tokens": 8068,
+        "sha256": "0314f7b085a5b8b4253f52a5b66bb3bf7a936fb7cf4425c5ce73c8a62933eaaf"
+      },
+      {
+        "path": "platforms/chatgpt/knowledge/11-pedagogy-and-intelligence.md",
+        "size": 67233,
+        "chars": 65229,
+        "words": 10092,
+        "tokens": 16307,
+        "sha256": "0713d2afe45e922764b285c26d67a40a85525b84bb923e2680597132aebdca22"
+      },
+      {
+        "path": "platforms/chatgpt/knowledge/12-examination-and-rubrics.md",
+        "size": 27586,
+        "chars": 26880,
+        "words": 3754,
+        "tokens": 6720,
+        "sha256": "a46b924f30435e3dc194ada932bf14c30d80e3fc367dbbb6ce46e37241a63b0e"
+      }
+    ],
+    "claude": [
+      {
+        "path": "platforms/claude/README.md",
+        "size": 840,
+        "chars": 829,
+        "words": 110,
+        "tokens": 207,
+        "sha256": "fa30c68138fa899010d8988e50beeea22ab5f5356ef25ee18f7fe705f45c1a5a"
+      },
+      {
+        "path": "platforms/claude/project-instructions.md",
+        "size": 2681,
+        "chars": 2639,
+        "words": 322,
+        "tokens": 659,
+        "sha256": "55fd24e69b7e9092135b2f8c4cf56d5c49ee2a9b358979ba9e8916e8764bf7b0"
+      },
+      {
+        "path": "platforms/claude/knowledge/AI-STUDENT-TUTOR-CORE.md",
+        "size": 21494,
+        "chars": 21184,
+        "words": 2687,
+        "tokens": 5296,
+        "sha256": "5febc1abd5115f1833337968682cdb23f746b6027fb71fe10336163214f5fc7b"
+      },
+      {
+        "path": "platforms/claude/knowledge/exam-analytics.md",
+        "size": 27586,
+        "chars": 26880,
+        "words": 3754,
+        "tokens": 6720,
+        "sha256": "a46b924f30435e3dc194ada932bf14c30d80e3fc367dbbb6ce46e37241a63b0e"
+      },
+      {
+        "path": "platforms/claude/knowledge/humanities-social-sciences.md",
+        "size": 76352,
+        "chars": 74760,
+        "words": 10521,
+        "tokens": 18690,
+        "sha256": "b7cf5384b7a82a16e2d4a94cb1e502e9751ea159d37f3e050f51b6cc208ce6a6"
+      },
+      {
+        "path": "platforms/claude/knowledge/ib-and-university.md",
+        "size": 24056,
+        "chars": 23543,
+        "words": 3392,
+        "tokens": 5885,
+        "sha256": "96408cb5e32f316297422e918d20645a167a3e77a6e675f18a84c73a640b2cda"
+      },
+      {
+        "path": "platforms/claude/knowledge/learning-science.md",
+        "size": 67233,
+        "chars": 65229,
+        "words": 10092,
+        "tokens": 16307,
+        "sha256": "0713d2afe45e922764b285c26d67a40a85525b84bb923e2680597132aebdca22"
+      },
+      {
+        "path": "platforms/claude/knowledge/north-america.md",
+        "size": 18054,
+        "chars": 17724,
+        "words": 2381,
+        "tokens": 4431,
+        "sha256": "afc1d2bba211c1866379c5f018b9c0050b4ff1d6b051aec3574fedf3fba5d117"
+      },
+      {
+        "path": "platforms/claude/knowledge/stem-sciences.md",
+        "size": 59777,
+        "chars": 57744,
+        "words": 8670,
+        "tokens": 14436,
+        "sha256": "f96784f148fae189146836f72e8829bce9ddfded559ca4de3f76a0ab5a3b98a3"
+      },
+      {
+        "path": "platforms/claude/knowledge/uk-and-british.md",
+        "size": 40685,
+        "chars": 39764,
+        "words": 5974,
+        "tokens": 9941,
+        "sha256": "319d3f7724565ca84c224af8c660b40c6a236d687769fa6fe8e743e67a1c2a57"
+      }
+    ],
+    "gemini": [
+      {
+        "path": "platforms/gemini/README.md",
+        "size": 1253,
+        "chars": 1231,
+        "words": 162,
+        "tokens": 307,
+        "sha256": "e7f19e3f1709708c3ff535518a7e840ed4f857cc628e64c6fc04c1cae745c824"
+      },
+      {
+        "path": "platforms/gemini/gemini-context-bundle.md",
+        "size": 460828,
+        "chars": 449644,
+        "words": 63916,
+        "tokens": 112411,
+        "sha256": "a827398c1ab3ee037e4a451519a67a0285c888e19e3bab6ae42efc07201a5d20"
+      },
+      {
+        "path": "platforms/gemini/gemini-system-instructions.md",
+        "size": 21494,
+        "chars": 21184,
+        "words": 2687,
+        "tokens": 5296,
+        "sha256": "5febc1abd5115f1833337968682cdb23f746b6027fb71fe10336163214f5fc7b"
+      }
+    ],
+    "manus": [
+      {
+        "path": "platforms/manus/README.md",
+        "size": 726,
+        "chars": 714,
+        "words": 96,
+        "tokens": 178,
+        "sha256": "9120271f8e38b09865757ff311c6e9fe10ae3c75bdf6e4a77a0e9acdad391711"
+      },
+      {
+        "path": "platforms/manus/SKILL.md",
+        "size": 1731,
+        "chars": 1707,
+        "words": 214,
+        "tokens": 426,
+        "sha256": "434a6a9c0a64be6f1cc19f6511fcf8e615763d00a9ffaa7d80e5d0d651f03827"
+      },
+      {
+        "path": "platforms/manus/manifest.json",
+        "size": 360,
+        "chars": 349,
+        "words": 23,
+        "tokens": 87,
+        "sha256": "407bb54530ee0f33030ecd778539b8516b0da1a3e844d73260112711a997d30f"
+      },
+      {
+        "path": "platforms/manus/references/AI-STUDENT-TUTOR-CORE.md",
+        "size": 21494,
+        "chars": 21184,
+        "words": 2687,
+        "tokens": 5296,
+        "sha256": "5febc1abd5115f1833337968682cdb23f746b6027fb71fe10336163214f5fc7b"
+      },
+      {
+        "path": "platforms/manus/references/humanities-social-sciences.md",
+        "size": 76352,
+        "chars": 74760,
+        "words": 10521,
+        "tokens": 18690,
+        "sha256": "b7cf5384b7a82a16e2d4a94cb1e502e9751ea159d37f3e050f51b6cc208ce6a6"
+      },
+      {
+        "path": "platforms/manus/references/pedagogy-and-rubrics.md",
+        "size": 67233,
+        "chars": 65229,
+        "words": 10092,
+        "tokens": 16307,
+        "sha256": "0713d2afe45e922764b285c26d67a40a85525b84bb923e2680597132aebdca22"
+      },
+      {
+        "path": "platforms/manus/references/stem-sciences.md",
+        "size": 59777,
+        "chars": 57744,
+        "words": 8670,
+        "tokens": 14436,
+        "sha256": "f96784f148fae189146836f72e8829bce9ddfded559ca4de3f76a0ab5a3b98a3"
+      }
+    ],
+    "universal": [
+      {
+        "path": "platforms/universal/AI-STUDENT-TUTOR-UNIVERSAL.md",
+        "size": 21494,
+        "chars": 21184,
+        "words": 2687,
+        "tokens": 5296,
+        "sha256": "5febc1abd5115f1833337968682cdb23f746b6027fb71fe10336163214f5fc7b"
+      },
+      {
+        "path": "platforms/universal/Modelfile",
+        "size": 21763,
+        "chars": 21441,
+        "words": 2718,
+        "tokens": 5360,
+        "sha256": "8925cce4d0ac6869cbd46671e781be72b0674c5535241c37958940abd433dc2b"
+      },
+      {
+        "path": "platforms/universal/README.md",
+        "size": 851,
+        "chars": 833,
+        "words": 119,
+        "tokens": 208,
+        "sha256": "e3bb0715873a34b78851a82a2e554864c061d56bbccdd13fda5a21e50a02ed90"
+      },
+      {
+        "path": "platforms/universal/api-example.py",
+        "size": 953,
+        "chars": 927,
+        "words": 96,
+        "tokens": 231,
+        "sha256": "33155df9ada3c31c9f5ba656baebabebafaeb5f0e961b0d2c505eb7d202b8a2e"
+      },
+      {
+        "path": "platforms/universal/open-webui-preset.json",
+        "size": 21775,
+        "chars": 21767,
+        "words": 2527,
+        "tokens": 5441,
+        "sha256": "40923da4bdb05a92c667ed6fb711efc2699a27896a23fefe650cfee1484670f4"
+      }
+    ]
+  },
+  "packs": {
+    "packs/INDEX.md": {
+      "size": 5046,
+      "chars": 5010,
+      "words": 574,
+      "tokens": 1252,
+      "sha256": "0059ee68ed32ecee2dabfe002cf39e8833e2475b41824ae0d4c66d8b153af97c"
+    },
+    "packs/curricula/africa-caribbean-latin.md": {
+      "size": 43380,
+      "chars": 42403,
+      "words": 5873,
+      "tokens": 10600,
+      "sha256": "91dca467dc499e4d34b8e921510a6862b37063b23625b5d58c9165ce4bb25beb"
+    },
+    "packs/curricula/asia-pacific.md": {
+      "size": 28872,
+      "chars": 28059,
+      "words": 3770,
+      "tokens": 7014,
+      "sha256": "613de480d6fe8f3957ab3b35914a6cfc375a2211a08e7414d7f9fdc81823509d"
+    },
+    "packs/curricula/europe-and-admissions.md": {
+      "size": 32876,
+      "chars": 32272,
+      "words": 4381,
+      "tokens": 8068,
+      "sha256": "0314f7b085a5b8b4253f52a5b66bb3bf7a936fb7cf4425c5ce73c8a62933eaaf"
+    },
+    "packs/curricula/international-baccalaureate-and-higher-ed.md": {
+      "size": 24056,
+      "chars": 23543,
+      "words": 3392,
+      "tokens": 5885,
+      "sha256": "96408cb5e32f316297422e918d20645a167a3e77a6e675f18a84c73a640b2cda"
+    },
+    "packs/curricula/north-america.md": {
+      "size": 18054,
+      "chars": 17724,
+      "words": 2381,
+      "tokens": 4431,
+      "sha256": "afc1d2bba211c1866379c5f018b9c0050b4ff1d6b051aec3574fedf3fba5d117"
+    },
+    "packs/curricula/uk-and-british.md": {
+      "size": 40685,
+      "chars": 39764,
+      "words": 5974,
+      "tokens": 9941,
+      "sha256": "319d3f7724565ca84c224af8c660b40c6a236d687769fa6fe8e743e67a1c2a57"
+    },
+    "packs/examination/exam-intelligence-and-analytics.md": {
+      "size": 27586,
+      "chars": 26880,
+      "words": 3754,
+      "tokens": 6720,
+      "sha256": "a46b924f30435e3dc194ada932bf14c30d80e3fc367dbbb6ce46e37241a63b0e"
+    },
+    "packs/pedagogy/learning-science-and-pedagogy.md": {
+      "size": 67233,
+      "chars": 65229,
+      "words": 10092,
+      "tokens": 16307,
+      "sha256": "0713d2afe45e922764b285c26d67a40a85525b84bb923e2680597132aebdca22"
+    },
+    "packs/pedagogy/student-intelligence-and-prerequisites.md": {
+      "size": 12948,
+      "chars": 12562,
+      "words": 1594,
+      "tokens": 3140,
+      "sha256": "aee214131c4a024ba69527f076eb13d1e282291d3bc762a90c185fcd9125a3bb"
+    },
+    "packs/subjects/humanities-social-sciences.md": {
+      "size": 76352,
+      "chars": 74760,
+      "words": 10521,
+      "tokens": 18690,
+      "sha256": "b7cf5384b7a82a16e2d4a94cb1e502e9751ea159d37f3e050f51b6cc208ce6a6"
+    },
+    "packs/subjects/professional-applied.md": {
+      "size": 20072,
+      "chars": 19735,
+      "words": 2379,
+      "tokens": 4933,
+      "sha256": "95665d82e8d5bb8b4fbdb0aac5da5af71f07b7169d9ec7e1455895d320d4ae7f"
+    },
+    "packs/subjects/stem-sciences.md": {
+      "size": 59777,
+      "chars": 57744,
+      "words": 8670,
+      "tokens": 14436,
+      "sha256": "f96784f148fae189146836f72e8829bce9ddfded559ca4de3f76a0ab5a3b98a3"
+    },
+    "packs/voice-and-multimodal/voice-and-multimodal.md": {
+      "size": 11801,
+      "chars": 11447,
+      "words": 1522,
+      "tokens": 2861,
+      "sha256": "8b1fd3166332dcffaf41de785b7be6e7cd0b51597b71660f7bb501f8f69f6c6d"
+    }
+  },
+  "zips": {
+    "chatgpt-distribution.zip": {
+      "size": 184211,
+      "path": "dist/zips/chatgpt-distribution.zip"
+    },
+    "claude-distribution.zip": {
+      "size": 133318,
+      "path": "dist/zips/claude-distribution.zip"
+    },
+    "gemini-distribution.zip": {
+      "size": 178827,
+      "path": "dist/zips/gemini-distribution.zip"
+    },
+    "manus-distribution.zip": {
+      "size": 90220,
+      "path": "dist/zips/manus-distribution.zip"
+    },
+    "universal-distribution.zip": {
+      "size": 28593,
+      "path": "dist/zips/universal-distribution.zip"
+    },
+    "all-packs.zip": {
+      "size": 185857,
+      "path": "dist/zips/all-packs.zip"
+    }
+  }
+}
