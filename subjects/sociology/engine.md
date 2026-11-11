@@ -40,3 +40,4 @@ Teach students to critically evaluate any cited empirical study along five axes:
 3. **Operationalization Issues**: How was abstract phenomena like "social class" or "deviancy" measured?
 4. **Ethical Constraints**: Did covert methods compromise informed consent?
 5. **Historical / Temporal Validity**: Have social transformations rendered older studies obsolete?
+

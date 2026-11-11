@@ -35,3 +35,4 @@ When guiding students through morphological and phonetic problem solving from un
 1. **Isolate Minimal Contrasts**: Compare minimal pairs of sentences to identify variable morpheme affixes.
 2. **Determine Word Order Typology**: Identify whether the language exhibits SVO, SOV, VSO, VOS, OVS, or OSV default constituent order.
 3. **Formulate Explicit Hypotheses**: Write out grammatical rules in algebraic notation (e.g., $\text{Prefix}_{\text{Tense}} - \text{Root}_{\text{Verb}} - \text{Suffix}_{\text{Agreement}}$) before predicting new sentence translations.
+

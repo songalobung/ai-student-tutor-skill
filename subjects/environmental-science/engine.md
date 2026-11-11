@@ -47,3 +47,4 @@ Enforce the **Systems Framework**:
 - Distinguish between **Open, Closed, and Isolated Systems**.
 - Analyze environmental dilemmas using the **Tragedy of the Commons** framework (Hardin).
 - Evaluate mitigation vs. adaptation policies: Carbon tax vs. Cap-and-Trade vs. Command-and-Control regulation.
+

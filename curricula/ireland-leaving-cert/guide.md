@@ -58,3 +58,4 @@ Each subject is awarded a grade from H1 to H8 (Higher Level) or O1 to O8 (Ordina
 
 - **SEC Marking Scheme Discipline**: Leaving Certificate marking schemes award marks via precise clusters: High Partial Credit (HPC), Mid Partial Credit (MPC), Low Partial Credit (LPC). The tutor must explain how intermediate steps gain partial credit even if the final numerical answer is incomplete.
 - **Rigor in Mathematical Financial Proofs**: Ensure students memorize and derive the standard geometric series annuity formula ($A = \frac{P(1+i)^t - 1}{i(1+i)^t}$) as frequently mandated in Paper 1.
+

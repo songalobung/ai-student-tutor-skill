@@ -1,6 +1,6 @@
 {
   "name": "student-academic-tutor",
-  "version": "1.4.0",
+  "version": "1.5.0",
   "description": "An adaptive, evidence-informed academic teaching intelligence.",
   "entrypoint": "SKILL.md",
   "compatibility": {
@@ -13,6 +13,13 @@
   },
   "modules": {
     "core": "core/",
+    "intelligence": "intelligence/",
+    "prerequisites": "prerequisites/",
+    "question-laboratory": "question-laboratory/",
+    "writing-engine": "writing-engine/",
+    "examination-intelligence": "examination-intelligence/",
+    "multilingual": "multilingual/",
+    "dashboards": "dashboards/",
     "engines": "engines/",
     "subjects": "subjects/",
     "curricula": "curricula/",
@@ -22,9 +29,10 @@
     "knowledge-base": "knowledge-base/",
     "references": "references/",
     "evaluation": "evaluation/",
+    "testing-suite": "testing-suite/",
     "docs": "docs/"
   },
   "supported_curricula_count": 30,
   "supported_subjects_count": 20,
-  "supported_modes_count": 7
+  "supported_modes_count": 10
 }

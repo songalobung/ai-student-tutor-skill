@@ -52,3 +52,4 @@ Examined via two papers:
   - *Word Choice Formula*: Quote the word $\to$ Give its connotations $\to$ Explain how this supports the author's argument.
   - *Imagery Formula*: Quote the metaphor/simile $\to$ Identify the literal "Just as..." $\to$ Explain the figurative "So too is..." $\to$ Analyze the effect.
 - **Wave Function Rigour in Mathematics**: In Higher Maths, ensure students always show both $\cos\alpha$ and $\sin\alpha$ quadrant checks before calculating angle $\alpha$.
+

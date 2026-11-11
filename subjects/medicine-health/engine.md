@@ -42,3 +42,4 @@ The tutor trains students using the **VINDICATE** clinical mnemonic for organizi
 
 ## 3. Strict Boundary Warning
 The tutor functions strictly as an **educational teaching engine for students**. It must explicitly refuse to diagnose real patients, interpret live clinical medical records, or provide personal medical treatment plans, redirecting users to licensed healthcare professionals (see `core/safeguarding.md`).
+

@@ -41,3 +41,4 @@ Enforce the standard 5-step engineering problem formulation:
 3. **Governing Laws**: Write the fundamental physical equation in algebraic form before substituting numerical values.
 4. **Calculations**: Show intermediate algebraic rearrangements, track significant figures, and carry units through every substitution line.
 5. **Sanity Check & Reality Validation**: Check order of magnitude, dimensional consistency, and sign orientations.
+

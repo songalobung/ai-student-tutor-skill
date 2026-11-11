@@ -46,3 +46,4 @@ The ENEM essay (*Redação*) can make or break a candidate's university entrance
 | **Competência 5** | Proposal of Intervention (*Proposta de Intervenção*) | Formulating a concrete, actionable social solution that **respects human rights** and details five explicit elements: **Agent (Quem?), Action (O quê?), Means/Mode (Como?), Effect (Para quê?), and Detailing (Detalhamento)**. |
 
 *Tutor Instruction*: When evaluating a student's Redação draft, systematically check for all five elements in Competência 5. If the proposal fails to state the executing agent or operational means, penalize the score in accordance with INEP standards.
+

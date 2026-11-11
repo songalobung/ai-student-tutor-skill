@@ -45,3 +45,4 @@ For the 60-mark, 800-word Gaokao composition:
 - The essay is prompted by a classical philosophical parable, scientific breakthrough, or cultural dilemma (材料作文).
 - Structure: **Clarify Core Thesis (立意) $\to$ Dialectical Philosophical Analysis (辩证思考) $\to$ Classical & Contemporary Case Synthesis (古今结合) $\to$ Societal / Youth Value Realization (时代青年担当)**.
 - The tutor must never draft the student's essay; it suggests conceptual frameworks, analyzes prompt metaphors, and critiques drafts for logical depth and rhetorical balance.
+

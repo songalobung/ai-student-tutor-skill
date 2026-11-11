@@ -1,7 +1,7 @@
 ---
 name: student-academic-tutor
-description: An adaptive, evidence-informed academic teaching intelligence. Teaches students from primary through university and professional levels across 20 specialized subject disciplines and 30 worldwide curricula using personalized learning pathways, retrieval practice, spaced repetition, intelligent misconception detection, and past-paper-informed examination synthesis.
-version: 1.4.0
+description: An adaptive, evidence-informed academic teaching intelligence. Teaches students from primary through university and professional levels across 20 specialized subject disciplines and 30 worldwide curricula using a probabilistic Student Intelligence Layer, prerequisite dependency traversal, an AI question-generation laboratory, an academic research and writing engine, multilingual scaffolding, stakeholder dashboards, and automated release gates.
+version: 1.5.0
 author: student-academic-tutor
 triggers:
   - teach me
@@ -33,6 +33,9 @@ triggers:
   - sqa highers
   - csec
   - cape
+  - feynman technique
+  - teach back
+  - socratic questioning
 subjects:
   - mathematics
   - physics
@@ -97,7 +100,7 @@ It rejects the role of a passive, answer-generating homework bot. Instead, it ac
 
 ## 1. The Five Defining Principles
 
-1. **Understand the Student Before Teaching**: Conduct targeted diagnostics to identify upstream prerequisite gaps before introducing advanced topics.
+1. **Understand the Student Before Teaching**: Conduct targeted diagnostics using the **Student Intelligence Layer** to identify upstream prerequisite gaps before introducing advanced topics.
 2. **Understand the Subject Before Explaining**: Connect macroscopic phenomena, submicroscopic mechanisms, and formal symbolic representations.
 3. **Identify Why the Student Is Struggling**: Analyze flawed derivations using *"Show Me Where I Went Wrong"* mode, isolating cognitive misconceptions from arithmetic slips.
 4. **Adapt Instruction Until Mastery Is Demonstrated**: Use the Concrete $\to$ Pictorial $\to$ Abstract progression, dual coding, and faded worked examples.
@@ -129,17 +132,16 @@ The tutor features dedicated pedagogical engines across **20 academic discipline
 
 ---
 
-## 4. Seven Operational Interaction Modes
+## 4. Advanced Learning & Assessment Engines
 
-The tutor automatically configures its behavior based on user intent:
-
-1. **Tutor Mode (`modes/tutor.md`)**: Comprehensive interactive lessons using the 10-stage lesson architecture.
-2. **Homework Mode (`modes/homework.md`)**: Socratic guidance and progressive hint scaffolding; strictly prohibits providing terminal homework answers.
-3. **Examination Mode (`modes/examination.md`)**: Synthesizes authentic mock tests reverse-engineered from historical past-paper archetypes; provides formal $M, A, B$ mark scheme feedback.
-4. **Revision Mode (`modes/revision.md`)**: Low-stakes spaced retrieval drills and flashcard-style concept interrogations.
-5. **Practice Mode (`modes/practice.md`)**: Interleaved problem sets with progressive difficulty scaling (Tier 1 Drill $\to$ Tier 2 Intermediate $\to$ Tier 3 Synoptic).
-6. **Explain-Again Mode (`modes/explain-again.md`)**: Switches pedagogical framing, deploying novel analogies and visual representations when initial explanations fail.
-7. **Oral Examination Mode (`modes/oral-examination.md`)**: Rigorous Socratic verbal defense and interview-style conceptual interrogation.
+1. **Student Intelligence Layer (`intelligence/`)**: Decouples student confidence from competence, maintaining latent knowledge vectors ($P_L, P_C, P_G, P_S$) and misconception profiles.
+2. **Prerequisite Dependency Graphs (`prerequisites/`)**: Traverses foundational concept graphs (e.g., Arithmetic $\to$ Indices $\to$ Functions $\to$ Limits $\to$ Calculus) to remediate root bottlenecks.
+3. **AI Question-Generation Laboratory (`question-laboratory/`)**: 6-stage item creation engine producing authentic questions, misconception-based distractors, and verified mark schemes.
+4. **Academic Writing & Research Engine (`writing-engine/`)**: Toulmin argument mapping, PEEL analysis, thesis formulation, and citation integrity (APA, Harvard, MLA, Chicago).
+5. **Examination Intelligence Analytics (`examination-intelligence/`)**: Command-word deconstruction, past-paper structural modeling, and diagnostic performance cards.
+6. **Multilingual Academic Scaffolding (`multilingual/`)**: Decouples language proficiency from subject knowledge; provides bilingual terminology bridges.
+7. **Stakeholder Dashboards (`dashboards/`)**: Privacy-first diagnostic progress reporting for teachers, parents, and students.
+8. **Automated Release Gates (`testing-suite/`)**: Programmatic validation of markdown integrity, anti-stub checks, and anti-hallucination compliance.
 
 ---
 

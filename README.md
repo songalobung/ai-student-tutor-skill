@@ -5,22 +5,22 @@
 ### *An Evidence-Informed, Cross-Platform Instructional Architecture for LLM Agents*
 
 [![License: Apache 2.0](https://img.shields.io/badge/License-Apache%202.0-blue.svg?style=for-the-badge)](https://opensource.org/licenses/Apache-2.0)
-[![Version](https://img.shields.io/badge/version-1.4.0-orange.svg?style=for-the-badge)]()
+[![Version](https://img.shields.io/badge/version-1.5.0-orange.svg?style=for-the-badge)]()
 [![Platform: Cross-LLM](https://img.shields.io/badge/Platform-Claude%20%7C%20Gemini%20%7C%20Codex%20%7C%20Manus-8A2BE2.svg?style=for-the-badge)](docs/installation/platform-setup.md)
 [![Curricula: 30 Supported](https://img.shields.io/badge/Curricula-30%20Verified%20Guides-success.svg?style=for-the-badge)](curricula/source-registry/verified-sources.md)
 [![Subjects: 20 Specialisms](https://img.shields.io/badge/Subjects-20%20Engines-brightgreen.svg?style=for-the-badge)]()
+[![Quality Gate: Passing](https://img.shields.io/badge/Release%20Gate-10%2F10%20Passing-brightgreen.svg?style=for-the-badge)](testing-suite/quality-system-protocol.md)
 [![Cognitive Offloading: Protected](https://img.shields.io/badge/Integrity-Socratic%20Fence%20Protected-red.svg?style=for-the-badge)](core/academic-integrity.md)
 
 <br/>
 
 **[Architecture](#-modular-system-architecture)** •
-**[Core Capabilities](#-15-foundational-pedagogical-capabilities)** •
+**[Student Intelligence Layer](#-student-intelligence-layer)** •
+**[Prerequisite Graphs](#-prerequisite-dependency-graph)** •
+**[Question Laboratory](#-ai-question-generation-laboratory)** •
+**[Writing & Research](#-academic-writing-and-research-engine)** •
 **[Supported Curricula (30)](#-curricula--admissions-examinations-30-verified-guides)** •
-**[Subject Engines (20)](#-specialized-subject-teaching-engines-20)** •
-**[Exam Mode & Past Papers](#-examination-mode--past-paper-synthesis)** •
-**[Installation & Setup](#-installation--platform-setup)** •
-**[Quality Assurance & Benchmarks](#-operational-quality-assurance--benchmarks)** •
-**[Research Foundations](#-educational-research-foundations)**
+**[Quality Release Gate](#-automated-quality-system--release-gate)**
 
 <br/>
 
@@ -35,92 +35,103 @@ The **AI Student Academic Tutor Skill** is an evidence-informed instructional ar
 Traditional LLMs often act as passive answer vending machines. When students ask for homework help, baseline models output completed answers immediately—triggering **cognitive offloading** where the student bypasses the productive struggle necessary to build conceptual understanding and long-term retention (Sweller et al., 2019; Stanford SCALE Initiative).
 
 This skill provides an operational framework that:
-- Establishes a **contextual integrity boundary** (distinguishing independent conceptual study from graded homework and formal exams).
-- Enforces a **10-stage lesson architecture** moving from concrete foundations to abstract problem solving.
-- Integrates an empirical **misconception knowledge base** to address the root causes of student errors.
-- Provides **past-paper reverse-engineering protocols** for synthesizing curriculum-aligned practice questions without hallucination.
-- Powers deep domain instruction across **20 specialized subject engines** and **30 worldwide curricula**.
+- Deploys a **Student Intelligence Layer** tracking latent knowledge and separating confidence from actual competence.
+- Traverses **Prerequisite Dependency Graphs** to isolate foundational bottlenecks (e.g., fractional exponents) before teaching advanced concepts (calculus).
+- Operates an **AI Question-Generation Laboratory** producing authentic, misconception-targeted assessment items with verified rubrics.
+- Enforces an **Academic Writing Engine** teaching Toulmin argument modeling and plagiarism-free synthesis without ghostwriting essays.
+- Provides **Multilingual Academic Scaffolding** ensuring language barriers are decoupled from subject mastery.
+- Generates **Teacher & Parent Dashboards** saving instructional preparation time while preserving student privacy.
+- Validates every release through a **10-Gate Automated Quality Assurance System**.
+
+---
+
+## 🧠 Student Intelligence Layer
+
+Located in [`intelligence/`](intelligence/):
+- **Dynamic Student State Model (`student-state-model.md`)**: Decouples student self-reported confidence from demonstrated mastery. Maps learners across four distinct quadrants: *Mastered & Calibrated*, *The Overconfidence Trap (Dunning-Kruger)*, *Struggling & Aware*, and *Imposter Hesitancy*.
+- **Misconception Profiling Engine (`misconception-profiling.md`)**: Distinguishes calculation slips from prerequisite gaps and active cognitive misconceptions, initiating targeted remedial dialogues.
 
 ```
-                    ┌────────────────────────────────────────┐
-                    │       Student Academic Tutor           │
-                    └──────────────────┬─────────────────────┘
-                                       │
-         ┌─────────────────────────────┼─────────────────────────────┐
-         ▼                             ▼                             ▼
-┌──────────────────┐         ┌───────────────────┐         ┌──────────────────┐
-│ Diagnostic-First │         │  Socratic Fence   │         │  Spaced Recall   │
-│ Prerequisite Gap │         │   Gradual Release │         │  Long-Term       │
-│ Isolation        │         │   Scaffolding     │         │  Retention       │
-└──────────────────┘         └───────────────────┘         └──────────────────┘
+          High Confidence
+                 ▲
+   Dunning-Kruger│    Mastered & Calibrated
+   (Overconfident│    (Accurate Self-Awareness)
+   - High Error) │
+─────────────────┼────────────────────────► High Mastery
+   Struggling &  │    Imposter Hesitancy
+   Aware         │    (High Competence
+   (Ready to     │    - Anxious Hesitation)
+   Learn)        ▼
+          Low Confidence
 ```
 
 ---
 
-## 🏛️ The Five Defining Instructional Principles
+## 🔗 Prerequisite Dependency Graph
+
+Located in [`prerequisites/`](prerequisites/):
+A student struggling with an advanced topic rarely has a deficiency in that topic alone. The Prerequisite Dependency Graph maps the strict structural hierarchy of knowledge, enabling the tutor to identify and repair root bottlenecks:
 
 ```mermaid
-flowchart LR
-    A["1. Understand Student\n(Diagnostic-First)"] --> B["2. Understand Subject\n(Macro/Micro/Symbolic)"]
-    B --> C["3. Identify Struggle\n(Error Fingerprinting)"]
-    C --> D["4. Adapt Instruction\n(Concrete -> Abstract)"]
-    D --> E["5. Measure Transfer\n(Spaced Retrieval)"]
+graph TD
+    A["01. Arithmetic & Integers"] --> B["02. Fractions & Ratios"]
+    B --> C["03. Algebraic Manipulation"]
+    C --> D["04. Laws of Indices & Exponents"]
+    C --> E["05. Linear & Quadratic Equations"]
+    D --> F["06. Functions & Composite Notation"]
+    E --> F
+    F --> G["07. Coordinate Geometry & Curve Sketching"]
+    G --> H["08. Limits & Continuity"]
+    H --> I["09. Differential Calculus"]
+    D --> I
+    I --> J["10. Integral Calculus"]
 ```
-
-1. **Understand the Student Before Teaching**: Conducts rapid diagnostic checks on upstream prerequisite competencies (e.g., verifying index laws before teaching calculus differentiation).
-2. **Understand the Subject Before Explaining**: Connects macroscopic phenomena, submicroscopic particle models, and formal mathematical symbolism.
-3. **Identify Why the Student Is Struggling**: Analyzes erroneous derivations using *"Show Me Where I Went Wrong"* mode, isolating cognitive misconceptions from arithmetic slips.
-4. **Adapt Instruction Until Mastery Is Demonstrated**: Progresses through **Concrete $\to$ Pictorial $\to$ Abstract** representations with faded worked examples.
-5. **Measure Independent Application & Delayed Retention**: Evaluates understanding using unassisted transfer problems and expanding-interval retrieval practice.
 
 ---
 
-## 🧠 15 Foundational Pedagogical Capabilities
+## 🧪 AI Question-Generation Laboratory
 
-| # | Capability | Description | Core Engine |
-|---|---|---|---|
-| **01** | **Academic Diagnostic Intelligence** | Isolates prerequisite gaps and builds dependency trees before teaching. | `engines/diagnostic-engine.md` |
-| **02** | **Personalized Learning Pathways** | Adapts pacing, difficulty, and sequencing to demonstrated competency. | `engines/personalised-learning.md` |
-| **03** | **Conceptual Teaching** | Explains underlying mechanisms rather than promoting mechanical rote memorization. | `core/academic-philosophy.md` |
-| **04** | **Step-by-Step Problem Solving** | Deconstructs multi-stage reasoning problems into manageable cognitive steps. | `subjects/mathematics/engine.md` |
-| **05** | **Misconception Fingerprinting** | Recognizes recurring student error patterns and delivers targeted remedies. | `knowledge-base/misconceptions/catalog.md` |
-| **06** | **Adaptive Difficulty Scaling** | Progresses through Tier 1 (Drill) $\to$ Tier 2 (Intermediate) $\to$ Tier 3 (Synoptic). | `engines/adaptive-difficulty.md` |
-| **07** | **Intelligent Formative Feedback** | Actionable corrections highlighting *why* marks were lost, not just marking wrong. | `assessments/marking-rubrics.md` |
-| **08** | **Faded Worked Examples** | Demonstrates complete solutions, gradually fading scaffolding (I do $\to$ We do $\to$ You do). | `pedagogy/worked-examples.md` |
-| **09** | **Retrieval Practice** | Low-stakes recall testing without notes to strengthen long-term memory traces. | `pedagogy/retrieval-practice.md` |
-| **10** | **Spaced Revision Scheduling** | Schedules review sessions based on the Ebbinghaus forgetting curve. | `engines/revision-engine.md` |
-| **11** | **Examination Preparation** | Teaches exam technique, time management, command words, and mark allocation. | `engines/examination-engine.md` |
-| **12** | **Learning Transfer Verification**| Tests whether students can apply knowledge to unfamiliar, cross-disciplinary problems. | `engines/learning-transfer.md` |
-| **13** | **Granular Progress Tracking** | Maintains a 4-dimensional mastery matrix across discrete syllabus objectives. | `engines/progress-engine.md` |
-| **14** | **Metacognitive Development** | Prompts self-reflection, confidence calibration, and self-explanation. | `pedagogy/metacognition.md` |
-| **15** | **Academic Integrity & Socratic Fence**| Contextually adapts assistance: full worked examples for study; isomorphic twins for homework. | `core/academic-integrity.md` |
+Located in [`question-laboratory/`](question-laboratory/):
+The laboratory executes a 6-stage verification pipeline before any generated assessment item reaches a student:
+1. **Blueprint & Bloom's Alignment**: Explicit calibration across Recall, Understand, Apply, Analyze, Evaluate, and Create tiers.
+2. **Double-Pathway Calculation**: Independently derives solutions through two distinct methods to prevent arithmetic slips.
+3. **Misconception-Based Distractors**: Multiple-choice distractors are engineered to catch specific documented student errors, not arbitrary numbers.
+4. **Formal Mark Scheme Formulation**: Generates explicit Method ($M$), Accuracy ($A$), Independent ($B$), and Follow-Through ($FT$) criteria.
+5. **Transfer Calibration**: Classifies items into Near-Transfer (Isomorphic), Intermediate Multi-Step, and Far Conceptual Transfer.
+
+---
+
+## ✍️ Academic Writing and Research Engine
+
+Located in [`writing-engine/`](writing-engine/):
+- **Toulmin & PEEL Argument Architecture**: Guides thesis formulation, evidentiary warrant backing, and counter-claim refutation.
+- **Academic Referencing & Plagiarism Education**: Teaches APA 7th, Harvard, MLA 9th, and Chicago styles.
+- **The Anti-Ghostwriting Boundary**: The tutor never drafts paragraphs for submission; it provides structural critique, analytical feedback, and sentence starters.
 
 ---
 
 ## 🔬 Specialized Subject Teaching Engines (20)
 
-Each discipline possesses an independent teaching engine with specific pedagogical strategies:
-
-1. **Mathematics** (`subjects/mathematics/engine.md`): Step-by-step derivations, proof rigour, LaTeX formatting, and error-point isolation.
-2. **Physics** (`subjects/physics/engine.md`): Dimensional checks, free-body diagrams (FBDs), and vector decomposition.
-3. **Chemistry** (`subjects/chemistry/engine.md`): Johnstone's triangle (Macroscopic $\to$ Submicroscopic $\to$ Symbolic).
-4. **Biology** (`subjects/biology/engine.md`): Connected metabolic systems, genetic inheritance, Punnett squares, and textual diagrams.
-5. **Economics** (`subjects/economics/engine.md`): Positive vs. normative separation, diagram shifts, and balanced policy evaluation.
-6. **Computer Science** (`subjects/computer-science/engine.md`): Big-O notation, algorithm tracing, data structures, and debugging.
-7. **History** (`subjects/history/engine.md`): Source criticism, historiographical debate, causality, and chronology.
-8. **English Language & Literature** (`subjects/english/engine.md`): Structural rhetoric, PEEL analytical essays, and close reading.
-9. **Geography** (`subjects/geography/engine.md`): Spatial analysis, GIS, physical landforms, and human development case studies.
-10. **Business Studies** (`subjects/business-studies/engine.md`): Strategic evaluation, marketing, operations, and business reports.
-11. **Accounting** (`subjects/accounting/engine.md`): Fundamental equation ($A = L + E$), DEAD CLIC rule, ledger T-accounts, and ratios.
-12. **Statistics** (`subjects/statistics/engine.md`): Probability distributions, hypothesis testing protocols, and $p$-value remediation.
-13. **Psychology** (`subjects/psychology/engine.md`): AO1/AO2/AO3 framework, methodological critique, and ethical guidelines.
-14. **Philosophy** (`subjects/philosophy/engine.md`): Formal standard-form arguments, epistemology, ethics, metaphysics, and Socratic testing.
-15. **Sociology** (`subjects/sociology/engine.md`): Functionalism, Marxism, Feminism, Interactionism, research methods, and social stratification.
-16. **Environmental Science** (`subjects/environmental-science/engine.md`): Earth systems, biogeochemical cycles, climate dynamics, and policy modeling.
-17. **Law & Jurisprudence** (`subjects/law/engine.md`): IRAC method, statutory interpretation, judicial precedent, tort, criminal, and contract law.
-18. **Engineering Sciences** (`subjects/engineering/engine.md`): Statics, structural mechanics, fluid dynamics, thermodynamics, and circuit laws.
-19. **Medicine & Health Sciences** (`subjects/medicine-health/engine.md`): Human physiology, pharmacology, microbiology, and clinical diagnostic reasoning (VINDICATE).
-20. **Linguistics** (`subjects/linguistics/engine.md`): IPA phonetics, phonology, morphology, syntax trees (X-bar), semantics, and Olympiad analysis.
+1. **Mathematics** (`subjects/mathematics/engine.md`): Multi-step derivations, proof rigour, LaTeX formatting.
+2. **Physics** (`subjects/physics/engine.md`): Free-body diagrams, dimensional analysis, and vector decomposition.
+3. **Chemistry** (`subjects/chemistry/engine.md`): Macroscopic $\to$ Submicroscopic $\to$ Symbolic representation.
+4. **Biology** (`subjects/biology/engine.md`): Connected metabolic systems, genetic inheritance, Punnett squares.
+5. **Economics** (`subjects/economics/engine.md`): Positive vs. normative separation, diagram shifts, policy modeling.
+6. **Computer Science** (`subjects/computer-science/engine.md`): Big-O, algorithm tracing, data structures, debugging.
+7. **History** (`subjects/history/engine.md`): Source criticism, historiographical debate, causality, chronology.
+8. **English Language & Literature** (`subjects/english/engine.md`): Textual analysis, PEEL essays, and rhetoric.
+9. **Geography** (`subjects/geography/engine.md`): Spatial analysis, GIS, physical landforms, human systems.
+10. **Business Studies** (`subjects/business-studies/engine.md`): Strategy, operations, financial decision-making.
+11. **Accounting** (`subjects/accounting/engine.md`): Fundamental equation ($A = L + E$), DEAD CLIC rule, ledger T-accounts.
+12. **Statistics** (`subjects/statistics/engine.md`): Probability distributions, hypothesis testing, $p$-value remediation.
+13. **Psychology** (`subjects/psychology/engine.md`): AO1/AO2/AO3 framework, methodological critique, ethics.
+14. **Philosophy** (`subjects/philosophy/engine.md`): Formal logic, epistemology, normative ethics, metaphysics.
+15. **Sociology** (`subjects/sociology/engine.md`): Functionalism, Marxism, Feminism, Interactionism, research methods.
+16. **Environmental Science** (`subjects/environmental-science/engine.md`): Earth systems, biogeochemical cycles, climate dynamics.
+17. **Law & Jurisprudence** (`subjects/law/engine.md`): IRAC method, precedent (*ratio* vs. *obiter*), criminal, tort, contract law.
+18. **Engineering Sciences** (`subjects/engineering/engine.md`): Statics, SDOF vibrations, fluid dynamics, thermodynamics, circuits.
+19. **Medicine & Health Sciences** (`subjects/medicine-health/engine.md`): Human physiology, pharmacokinetics, VINDICATE framework.
+20. **Linguistics** (`subjects/linguistics/engine.md`): IPA phonetics, phonology, morphology, syntax trees (X-bar), Olympiads.
 
 ---
 
@@ -162,149 +173,16 @@ Each curriculum guide provides verified examining authorities, current specifica
 
 ---
 
-## 📝 Examination Mode & Past-Paper Synthesis
+## 🛡️ Automated Quality System & Release Gate
 
-In **Examination Mode** (`modes/examination.md`), the tutor acts as an expert examiner, generating realistic mock papers by reverse-engineering historical exam archetypes:
-
-```
-[Target Syllabus & Exam Board Identified]
-                   |
-                   v
-[Step 1: Structural & Archetype Analysis]
-(Inspect historical question structures, mark allocations, diagram conventions & command words)
-                   |
-                   v
-[Step 2: Difficulty & Cognitive Calibration]
-(30% Recall/Routine, 45% Intermediate/Transfer, 25% High-Stakes Synoptic)
-                   |
-                   v
-[Step 3: Synthetic Item Creation (Isomorphic & Novel)]
-(Retain exact structural skeleton while introducing novel numerical values and fresh contexts)
-                   |
-                   v
-[Step 4: Formal Mark Scheme Formulation]
-(Generate explicit Method [M], Accuracy [A], Independent [B], and Follow-Through [FT] marks)
-```
-
----
-
-## 🔍 Operational Quality Assurance & Benchmarks
-
-The repository includes an active evaluation architecture to ensure pedagogical quality:
-
-- **Golden Datasets (`evaluation/golden-datasets/reference-items-v1.json`)**: Verifiable test items across calculus, physics kinematics, chemical equilibrium, genetics, and macroeconomics with explicit mark-scheme criteria.
-- **Model Benchmarking Protocols (`evaluation/model-benchmarks/benchmark-protocol.md`)**: Operational guidelines for testing the skill across Claude, Gemini, Codex, and GPT models.
-- **Source Registry (`curricula/source-registry/verified-sources.md`)**: Tracks official syllabus URLs, specification codes, and last-reviewed verification dates across all 30 curricula.
-- **Misconception Knowledge Base (`knowledge-base/misconceptions/catalog.md`)**: Empirical catalog detailing common misconceptions, diagnostic questions, and remediation protocols across core subjects.
-- **Uncertainty Management Protocol (`core/uncertainty-management.md`)**: Explicit guidelines mandating epistemic honesty, boundary disclosures, and citation integrity.
-
----
-
-## 🔬 Educational Research Foundations
-
-The architecture is grounded in peer-reviewed cognitive science, meta-analyses, and educational AI guidelines:
-
-```
-├── Ma et al. (2014)          -> ITS Meta-Analysis (N=14,321; g=0.42-0.57 positive effect size)
-├── Steenbergen-Hu (2014)     -> ITS in Higher Education Meta-Analysis (N=4,792; g=0.32)
-├── Huang et al. (2021)       -> Meta-Analysis of RCTs on Intelligent Tutoring (N=10,217; g=0.43)
-├── Agarwal et al. (2021)     -> Systematic Review of Retrieval Practice (50 classroom experiments)
-├── Murray et al. (2023)      -> Spaced vs. Massed Mathematics Meta-Analysis (g=0.38)
-├── Sweller et al. (2019)     -> Cognitive Load Theory, Worked Examples, and Faded Scaffolding
-├── Hattie & Timperley (2007) -> Process and Self-Regulation Feedback over Personal Praise (d=0.74)
-└── UNESCO (2023)             -> Guidance for Generative AI in Education and Research
-```
-
-*For complete citations and implementation notes, see [`references/research-foundations.md`](references/research-foundations.md).*
-
----
-
-## 🗂️ Modular System Architecture
-
-```
-student-academic-tutor/
-│
-├── SKILL.md                              # Main agent manifest & operational guidelines
-├── manifest.json                         # Machine-readable metadata & engine mappings
-│
-├── core/                                 # Philosophy, ethics, safeguarding & student profiling
-│   ├── academic-philosophy.md            # Socratic method, ITS evidence, cognitive foundations
-│   ├── teaching-protocol.md              # 10-stage lesson protocol & decision trees
-│   ├── student-profiling.md             # Learner model schema & confidence calibration
-│   ├── learning-science.md               # Empirical research (retrieval, spacing, cognitive load)
-│   ├── academic-integrity.md             # Context-sensitive integrity boundaries & isomorphic twins
-│   ├── accuracy-standards.md             # Mathematical verification & calculation rigor
-│   ├── uncertainty-management.md         # Epistemic boundaries & source verification
-│   └── safeguarding.md                   # UNESCO compliance, student privacy & lab safety
-│
-├── engines/                              # 12 specialized teaching engines
-│   ├── diagnostic-engine.md              # Prerequisite gap isolation & dependency graphs
-│   ├── personalised-learning.md          # Adaptive pathways & pacing decisions
-│   ├── curriculum-engine.md              # Syllabus mapping & command-word parsing
-│   ├── lesson-engine.md                  # Concrete -> Pictorial -> Abstract lesson delivery
-│   ├── assessment-engine.md              # 10 question formats & formative feedback
-│   ├── misconception-engine.md           # "Show me where I went wrong" & error fingerprinting
-│   ├── revision-engine.md                # Spaced repetition scheduling & retrieval practice
-│   ├── examination-engine.md             # Exam technique, mark maximization & command words
-│   ├── learning-transfer.md              # Intermediate & far conceptual transfer verification
-│   ├── adaptive-difficulty.md            # Rolling 3-attempt ZPD difficulty modulation
-│   ├── progress-engine.md                # Topic-level mastery matrix (Novice -> Mastered)
-│   └── visual-learning-engine.md         # ASCII diagrams, Mermaid graphs, LaTeX & PhET links
-│
-├── subjects/                             # 20 dedicated subject teaching engines
-│   ├── mathematics/                      ├── computer-science/             ├── law/
-│   ├── physics/                          ├── history/                      ├── engineering/
-│   ├── chemistry/                        ├── english/                      ├── medicine-health/
-│   ├── biology/                          ├── geography/                    ├── linguistics/
-│   ├── economics/                        ├── business-studies/             ├── statistics/
-│   ├── philosophy/                       ├── accounting/                   └── psychology/
-│   └── sociology/                        └── environmental-science/
-│
-├── curricula/                            # 30 verified secondary, university & professional guides
-│   ├── source-registry/                  # Official syllabus portal links & verification dates
-│   ├── cambridge-igcse/                  ├── kenya-cbc/                    ├── sat-act/
-│   ├── cambridge-a-level/                ├── uganda/                       ├── gre-gmat/
-│   ├── ib/                               ├── south-sudan/                  ├── ielts-toefl/
-│   ├── gcse/                             ├── waec-wassce/                  ├── mcat-usmle/
-│   ├── a-level/                          ├── australia-vce-hsc/            ├── lsat/
-│   ├── ap/                               ├── french-baccalaureat/          ├── south-africa-caps-iebe/
-│   ├── cbse/                             ├── german-abitur/                ├── canada-ontario-ossd/
-│   ├── china-gaokao/                     ├── singapore-gce-al/             ├── new-zealand-ncea/
-│   ├── japan-common-test/                ├── ireland-leaving-cert/         ├── caribbean-csec-cape/
-│   └── brazil-enem/                      └── scotland-sqa-highers/         └── university/
-│
-├── pedagogy/                             # 7 evidence-based learning frameworks
-│   ├── retrieval-practice.md             ├── worked-examples.md            └── metacognition.md
-│   ├── spaced-repetition.md              ├── mastery-learning.md
-│   ├── scaffolding.md                    └── formative-assessment.md
-│
-├── modes/                                # 7 operational interaction modes
-│   ├── tutor.md                          ├── revision.md                   └── oral-examination.md
-│   ├── homework.md                       ├── practice.md
-│   ├── examination.md                    └── explain-again.md
-│
-├── assessments/                          # Diagnostic batteries, question generation & marking rubrics
-│   ├── diagnostic-tests.md               ├── marking-rubrics.md
-│   ├── question-generation.md            └── benchmark-tests.md
-│
-├── knowledge-base/                       # Misconceptions & pedagogical diagnostics
-│   └── misconceptions/catalog.md         # Common errors, cognitive roots & remediation
-│
-├── references/                           # Scientific literature & advanced enhancements
-│   ├── research-foundations.md           ├── advanced-enhancements.md
-│   └── multimodal-protocols.md           # Vision math recognition & speech-to-speech
-│
-├── evaluation/                           # Quality assurance, benchmarks & empirical studies
-│   ├── golden-datasets/                  # Verified executable reference items (JSON)
-│   ├── model-benchmarks/                 # Multi-model evaluation protocols
-│   ├── regression-tests/                 # Regression prevention testing
-│   ├── learning-studies/                 # Controlled empirical trial methodology
-│   ├── subject-accuracy.md               ├── assessment-reliability.md     └── learning-outcome-tests.md
-│   ├── pedagogical-quality.md            ├── hallucination-tests.md
-│
-└── docs/                                 # Platform-specific documentation
-    └── installation/platform-setup.md    # Instructions for Claude, Gemini, Codex, Manus
-```
+Located in [`testing-suite/`](testing-suite/):
+Every update undergoes an automated 10-gate audit script (`validate-release.ps1`):
+1. **Manifest Integrity**: Validates `manifest.json` schema and entrypoints.
+2. **SKILL.md Frontmatter**: Verifies trigger tokens, subject indices, and curriculum arrays.
+3. **Golden Dataset Accuracy**: Confirms executable reference items pass deterministic scoring keys.
+4. **Citation Anti-Hallucination Audit**: Scans for unverified placeholder strings (e.g., `arXiv:xxxx`).
+5. **Curriculum Anti-Stub Audit**: Verifies every curriculum guide exceeds 2,500 characters of verified specifications.
+6. **Subject Depth Verification**: Audits comprehensive pedagogical models across all 20 subject engines.
 
 ---
 
@@ -329,6 +207,9 @@ git clone https://github.com/songalobung/ai-student-tutor-skill.git
 
 # Enter repository
 cd ai-student-tutor-skill
+
+# Run the automated release gate verification
+powershell -ExecutionPolicy Bypass -File .\testing-suite\validate-release.ps1
 ```
 
 ---

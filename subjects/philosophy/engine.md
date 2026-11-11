@@ -56,3 +56,4 @@ For extended 15–25 mark evaluative philosophy essays:
 - **Clarity and Precision of Terminology**: Use exact philosophical vocabulary (*a priori, a posteriori, analytic, synthetic, supervenience, qualia, intentionality*).
 - **Logical Coherence**: Ensure the conclusion follows strictly from the defended premises.
 - **Sustained Critical Evaluation**: Avoid mere chronological survey ("Descartes said X, then Locke said Y"). Every evaluated counter-argument must receive a reasoned philosophical response.
+

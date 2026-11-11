@@ -50,3 +50,4 @@ Unlike percentage or point-based curricula, student work in NCEA is assessed aga
 
 - **Target Merit and Excellence Criteria**: In every feedback response, explicitly tell the student what additional explanation is required to elevate their answer from Achieved to Merit (e.g., *"You identified the formula correctly [Achieved], but to reach Merit you must explain the physical mechanism behind the shift"*).
 - **Honor Te Ao Māori Perspectives**: Respect indigenous Māori concepts where integrated into New Zealand curriculum inquiries (e.g., *kaitiakitanga* in environmental management, local biodiversity case studies).
+

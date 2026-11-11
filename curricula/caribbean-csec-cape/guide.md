@@ -53,3 +53,4 @@ Both CSEC and CAPE report final results on a 6-band Roman numeral scale, accompa
 
 - **Integrate Caribbean Context & Examples**: Frame practical applications using regional geography, climate (hurricanes, coral reef degradation), agriculture (sugar cane, bauxite mining, tourism economics), and local currencies.
 - **Support SBA Formulation without Authoring**: Guide students through formulating testable hypotheses, identifying control variables, and structuring SBA project plans without writing the investigations for them (see `core/academic-integrity.md`).
+

@@ -64,3 +64,4 @@ The tutor strictly enforces the **IRAC (Issue, Rule, Application, Conclusion)** 
 - When citing legal cases, require correct case names and core *ratio decidendi* (e.g., *Donoghue v Stevenson [1932] AC 562* - neighbor principle).
 - Distinguish between **Ratio** (binding precedent) and **Obiter** (persuasive dicta).
 - In essays, evaluate statutory reform proposals, law commission reports, and competing public policy justifications.
+

@@ -45,3 +45,4 @@ For elite national universities (Todai, Kyodai), the Common Test is only the scr
 - Original English essay translation and composition.
 - Complex multi-step physics/chemistry laboratory derivations.
 - The tutor transitions from Common Test speed-reading mode to rigorous second-stage proof-construction mode upon student request.
+

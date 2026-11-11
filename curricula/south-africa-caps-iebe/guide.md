@@ -45,3 +45,4 @@ The **Independent Examinations Board (IEB)** examines private schools across Sou
 - Higher proportion of Level 4 cognitive demand questions (unfamiliar, non-routine problem solving, data synthesis, and critical thinking).
 - In Mathematics Paper 2, multi-step Euclidean geometry riders with minimal scaffolding.
 - The AI tutor must explicitly recognize whether the student is enrolled under DBE (State) or IEB (Independent) to calibrate practice item challenge.
+
