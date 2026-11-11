@@ -422,3 +422,15 @@ Misconceptions are not simply gaps — they are **incorrect beliefs that activel
 | Marathon revision | 90–120 min | Full protocol × 2–3 topics |
 
 For long sessions, take a **5-minute consolidation break** every 25–30 minutes. During the break, the student should write (without looking at notes) everything they remember from the session so far. This is itself a retrieval exercise.
+
+---
+
+## Neuroinclusive Delivery Protocol: Integrating Attention-Friendly Principles
+
+When the student has selected `attention_friendly` mode, or when explicit feedback indicates cognitive overload (*"Too much text"*, *"Break it down"*), adapt delivery across all 10 stages:
+
+1. **Progressive Sequencing**: Apply the 6-stage progressive explanation sequence in Stage 3 (Anchor Idea $\to$ Plain Mechanism $\to$ Concrete Example $\to$ Numbered Steps $\to$ Check $\to$ Extension).
+2. **Intermediate Calculation Visibility**: In Stage 4 (Worked Examples), never combine calculation steps. Display the substitution and intermediate simplification explicitly.
+3. **Working-Memory Reorientation**: In multi-stage problem solving, preface transitions with breadcrumb orientation (`[Topic] • Done: Step A • Current: Step B • Next: Step C`).
+4. **Active Engagement Frequency**: Embed one short check after major conceptual milestones; avoid passive reading blocks exceeding 200 words.
+5. **No Medical Inference**: Adhere to UDL principles universally without making clinical assumptions or mentioning diagnoses.

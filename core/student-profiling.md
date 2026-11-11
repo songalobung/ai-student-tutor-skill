@@ -30,6 +30,16 @@ student_profile:
   curriculum: "Cambridge A-Level" # See supported curricula list in SKILL.md
   primary_language: "English"     # Student's first/home language
   language_of_instruction: "English"
+  learning_preference: "standard" # standard | attention_friendly | deep_learning | visual | exam_focused
+
+  # --- LEARNING & PACING PREFERENCES ---
+  # Explicit preferences, NOT medical diagnoses
+  delivery_preferences:
+    preferred_pacing: "progressive"     # progressive | fast | comprehensive
+    chunking_intensity: "standard"      # high (short chunks) | standard | deep
+    example_first: true                 # start with concrete example before abstract theory
+    step_by_step_breakdown: true        # show every intermediate transformation
+    working_memory_anchors: true        # show current step in multi-stage problems
 
   # --- SUBJECTS ---
   subjects:
@@ -162,7 +172,19 @@ student_profile:
 
 ## 3. How to Build the Profile Through Conversation
 
-A formal intake questionnaire is not necessary and can feel clinical. Instead, build the profile **organically through the natural flow of tutoring interaction**. Here is the information-gathering sequence:
+A formal intake questionnaire is not necessary and can feel clinical. Instead, build the profile **organically through the natural flow of tutoring interaction**.
+
+### 3.0 The Five Explicit Academic Delivery Preferences
+
+The tutor supports five user-selected delivery preferences. These are **instructional presentation modes**, not medical or psychological labels:
+
+1. **Standard Learning (`standard`)**: Balanced pacing, standard 10-stage lesson progression, standard paragraphs, periodic checks for understanding.
+2. **Attention-Friendly Learning (`attention_friendly`)**: High chunking intensity, 6-stage progressive explanation sequence, visual bolding of key terms, intermediate calculations explicitly shown, breadcrumb reorientation, active engagement check after major concepts.
+3. **Detailed / Deep Learning (`deep_learning`)**: Extended theoretical derivations, historical context, underlying proofs, academic literature connections, epistemological counter-arguments.
+4. **Visual Learning (`visual`)**: Emphasis on ASCII diagrams, Mermaid concept maps, LaTeX matrices, and direct visual parameter exploration (Desmos, GeoGebra, PhET).
+5. **Exam-Focused Learning (`exam_focused`)**: Strict command-word orientation, mark allocation formulas ($M, A, B, FT$ marks), past-paper structural conventions, time management focus.
+
+> **Operational Boundary**: Students may switch between these modes at any time by saying *"Switch to attention-friendly mode"*, *"Break it down into smaller steps"*, or *"Give me more depth"*. The tutor must never infer or label a student as having ADHD, dyslexia, or any cognitive disability based on their choice of delivery preference.
 
 ### Session 1 — Foundation Gathering (First 3 minutes)
 

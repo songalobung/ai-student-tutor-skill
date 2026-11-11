@@ -37,3 +37,4 @@ flowchart TD
   1. Acknowledge the core truth: Total energy in the universe is indeed conserved.
   2. Reveal the hidden transformation: Where did the missing kinetic energy go? (Thermal friction, acoustic waves, permanent metal deformation).
   3. Re-anchor the rule: Momentum is always conserved; kinetic energy is only conserved in perfectly elastic collisions.
+

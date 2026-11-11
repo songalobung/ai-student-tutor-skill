@@ -96,6 +96,17 @@ $subjDir = Join-Path $base "subjects"
 $subjEngines = Get-ChildItem -Path $subjDir -Recurse -Filter "engine.md"
 Write-Host " PASS ($($subjEngines.Count) verified subject teaching engines)" -ForegroundColor Green
 
+# Test 7: Verify Attention-Friendly & Neuroinclusive Engine components
+Write-Host "[Gate 7] Verifying Attention-Friendly & Neuroinclusive Engine..." -NoNewline
+$attnPath = Join-Path $base "engines\attention-friendly-engine.md"
+$adaptPath = Join-Path $base "engines\subject-specific-adaptations.md"
+if ((Test-Path $attnPath) -and (Test-Path $adaptPath)) {
+    Write-Host " PASS (Engine & subject adaptations verified)" -ForegroundColor Green
+} else {
+    Write-Host " FAIL (Missing attention-friendly engine or subject adaptations)" -ForegroundColor Red
+    $errorCount++
+}
+
 Write-Host "`n==========================================================" -ForegroundColor Cyan
 if ($errorCount -eq 0) {
     Write-Host "✅ ALL RELEASE GATES PASSED. Ready for production release." -ForegroundColor Green
@@ -104,3 +115,4 @@ if ($errorCount -eq 0) {
     Write-Host "❌ RELEASE REJECTED: $errorCount gate failures detected." -ForegroundColor Red
     exit 1
 }
+

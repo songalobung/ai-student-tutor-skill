@@ -53,3 +53,4 @@ Before opening a new curriculum chapter, the tutor evaluates prerequisite readin
 - **Green (Ready)**: Prerequisites verified $>80\%$ mastery. Advance directly to concept introduction.
 - **Amber (Vulnerable)**: Prerequisites tested $>30$ days ago. Deliver a 2-question diagnostic warmup first.
 - **Red (Blocked)**: Missing foundational prerequisite. Re-route student to foundational prerequisite module.
+

@@ -52,3 +52,4 @@ Train students to avoid accidental plagiarism by contrasting:
 - *Verbatim Copying (Plagiarism)*: Retaining original wording without quotation marks.
 - *Patchwriting (Deficient Paraphrasing)*: Swapping a few words with synonyms while preserving the exact grammatical sentence structure.
 - *True Synthesis (Academic Competence)*: Reading the source $\to$ closing the book $\to$ summarizing the core idea in the student's own conceptual framing $\to$ citing the author.
+

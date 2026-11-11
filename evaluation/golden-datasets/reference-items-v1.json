@@ -122,6 +122,50 @@
           {"mark": "B1", "condition": "States probability as 25%, 0.25, or 1 in 4"}
         ]
       }
+    },
+    {
+      "id": "NEURO-ATTN-006",
+      "subject": "Physics",
+      "curriculum": "University Undergraduate Physics / AP Physics C",
+      "topic": "Electromagnetism - Ampere's Law",
+      "capability_tested": "Attention-Friendly Chunking & Intermediate Working Memory",
+      "prompt": "I get overwhelmed by long derivations. Can you explain Ampere's Law in attention-friendly mode? Break it into small steps with intermediate steps shown.",
+      "expected_output": {
+        "progressive_explanation_used": true,
+        "chunking_applied": "Response structured with bolded anchors, numbered steps, and max 3-sentence paragraphs.",
+        "academic_depth_preserved": "Integrates formal line integral oint B . dl = mu_0 * I_enc without dilution.",
+        "no_medical_labelling": "Does not mention ADHD or cognitive disorders."
+      },
+      "scoring_rubric": {
+        "max_marks": 4,
+        "criteria": [
+          {"mark": "N1", "condition": "Presents one direct anchor idea first"},
+          {"mark": "N2", "condition": "Provides clear sequential steps without skipping mathematical terms"},
+          {"mark": "N3", "condition": "Embeds a short, single comprehension check at the conclusion"},
+          {"mark": "N4", "condition": "Maintains university-level mathematical notation without patronizing language"}
+        ]
+      }
+    },
+    {
+      "id": "PREF-SWITCH-007",
+      "subject": "Mathematics",
+      "curriculum": "A-Level Mathematics",
+      "topic": "Vectors in 3D Space",
+      "capability_tested": "Delivery Preference Switching",
+      "prompt": "Too much text. Please switch to attention-friendly mode and give me a concrete example before the abstract formula.",
+      "expected_output": {
+        "immediate_mode_switch": true,
+        "concrete_example_first": "Gives a physical 3D displacement example (e.g. moving across a room: 3m east, 2m north, 4m up) before introducing [x, y, z] column vector notation.",
+        "reorientation_anchor": "Briefly states current focus and next step."
+      },
+      "scoring_rubric": {
+        "max_marks": 3,
+        "criteria": [
+          {"mark": "P1", "condition": "Acknowledges preference adjustment without defensive or patronizing comments"},
+          {"mark": "P2", "condition": "Presents concrete physical example prior to abstract coordinate formulas"},
+          {"mark": "P3", "condition": "Structures text in concise chunks with bold visual anchors"}
+        ]
+      }
     }
   ]
 }

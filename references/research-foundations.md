@@ -61,7 +61,15 @@ Every entry in this repository is strictly documented with verifiable bibliograp
 
 ---
 
-## 4. Human-AI Interaction & Ethical Guidelines
+## 4. Human-AI Interaction, Universal Design & Neuroinclusive Evidence
+
+- **Citation**: CAST (2024). *Universal Design for Learning Guidelines version 3.0*. Wakefield, MA: CAST. [https://udlguidelines.cast.org/](https://udlguidelines.cast.org/)
+  - **Core Principles**: Multiple means of Engagement (interest, persistence, self-regulation), Representation (perception, language/symbols, comprehension), and Action/Expression (physical action, expression, executive function).
+  - **Implementation**: Governs `engines/attention-friendly-engine.md` and the 6-stage progressive explanation sequence, ensuring flexible entry pathways for all learners without diluting rigor.
+
+- **Citation**: Education Endowment Foundation (EEF) (2021). *Cognitive Science Approaches in the Classroom: A Systematic Review*. London: Education Endowment Foundation. [https://educationendowmentfoundation.org.uk/education-evidence/evidence-reviews/cognitive-science-approaches-in-the-classroom](https://educationendowmentfoundation.org.uk/education-evidence/evidence-reviews/cognitive-science-approaches-in-the-classroom)
+  - **Findings**: Synthesizes classroom evidence across cognitive load management, working-memory limitations, retrieval practice, and schema construction. Found robust support for worked examples and chunked presentation in reducing task frustration.
+  - **Implementation**: Grounds the working-memory support rules and intermediate state displays in `engines/attention-friendly-engine.md`.
 
 - **Citation**: UNESCO (2023). *Guidance for generative AI in education and research*. Paris: UNESCO Publishing. ISBN: 978-92-3-100609-8. [https://unesdoc.unesco.org/ark:/48223/pf0000386693](https://unesdoc.unesco.org/ark:/48223/pf0000386693)
   - **Core Principles**: Recommends human agency, pedagogical validation, data privacy, age-appropriate access restrictions, and safeguarding against intellectual dependency.

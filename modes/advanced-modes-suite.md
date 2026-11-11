@@ -40,3 +40,4 @@ This operational guide defines ten specialized, evidence-based learning modes th
 2. Synthesize a unified case inquiry:
    - *Case*: The economics of renewable energy transitions modeled through differential equations and ecological carrying capacity limits.
 3. Guide the student to identify how mathematical models apply across biological populations and financial market dynamics.
+

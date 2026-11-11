@@ -5,10 +5,11 @@
 ### *An Evidence-Informed, Cross-Platform Instructional Architecture for LLM Agents*
 
 [![License: Apache 2.0](https://img.shields.io/badge/License-Apache%202.0-blue.svg?style=for-the-badge)](https://opensource.org/licenses/Apache-2.0)
-[![Version](https://img.shields.io/badge/version-1.5.0-orange.svg?style=for-the-badge)]()
+[![Version](https://img.shields.io/badge/version-1.6.0-orange.svg?style=for-the-badge)]()
 [![Platform: Cross-LLM](https://img.shields.io/badge/Platform-Claude%20%7C%20Gemini%20%7C%20Codex%20%7C%20Manus-8A2BE2.svg?style=for-the-badge)](docs/installation/platform-setup.md)
 [![Curricula: 30 Supported](https://img.shields.io/badge/Curricula-30%20Verified%20Guides-success.svg?style=for-the-badge)](curricula/source-registry/verified-sources.md)
 [![Subjects: 20 Specialisms](https://img.shields.io/badge/Subjects-20%20Engines-brightgreen.svg?style=for-the-badge)]()
+[![Neuroinclusive: UDL 3.0](https://img.shields.io/badge/Pedagogy-Neuroinclusive%20%26%20UDL-blueviolet.svg?style=for-the-badge)](engines/attention-friendly-engine.md)
 [![Quality Gate: Passing](https://img.shields.io/badge/Release%20Gate-10%2F10%20Passing-brightgreen.svg?style=for-the-badge)](testing-suite/quality-system-protocol.md)
 [![Cognitive Offloading: Protected](https://img.shields.io/badge/Integrity-Socratic%20Fence%20Protected-red.svg?style=for-the-badge)](core/academic-integrity.md)
 
@@ -136,7 +137,9 @@ student-academic-tutor/
 │   ├── adaptive-difficulty.md                # Rolling 3-attempt ZPD difficulty modulation
 │   ├── progress-engine.md                    # Topic-level mastery matrix (Novice -> Mastered)
 │   ├── visual-learning-engine.md             # ASCII diagrams, Mermaid graphs, LaTeX & PhET links
-│   └── academic-verification.md              # 4-tier evidence hierarchy & source provenance
+│   ├── academic-verification.md              # 4-tier evidence hierarchy & source provenance
+│   ├── attention-friendly-engine.md          # Progressive chunking, UDL, working memory anchors
+│   └── subject-specific-adaptations.md       # Neuroinclusive adaptations across all 20 subjects
 │
 ├── subjects/                                 # 20 Specialized Subject Teaching Engines
 │   ├── mathematics/engine.md                 # Step derivations, proofs, LaTeX notation

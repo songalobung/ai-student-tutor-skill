@@ -62,3 +62,4 @@ When authoring problem sets, the laboratory balances question sets across three 
 1. **Level 1 (Isomorphic Near-Transfer)**: Standard textbook context; tests basic procedural automaticity.
 2. **Level 2 (Intermediate Multi-Step)**: Requires combining 2 to 3 distinct syllabus operations.
 3. **Level 3 (Far Conceptual Transfer)**: Embeds the concept in an unfamiliar interdisciplinary scenario (e.g., modeling biological population extinction using radioactive half-life decay equations).
+

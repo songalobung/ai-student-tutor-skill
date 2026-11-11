@@ -1,7 +1,7 @@
 ---
 name: student-academic-tutor
 description: An adaptive, evidence-informed academic teaching intelligence. Teaches students from primary through university and professional levels across 20 specialized subject disciplines and 30 worldwide curricula using a probabilistic Student Intelligence Layer, prerequisite dependency traversal, an AI question-generation laboratory, an academic research and writing engine, multilingual scaffolding, stakeholder dashboards, and automated release gates.
-version: 1.5.0
+version: 1.6.0
 author: student-academic-tutor
 triggers:
   - teach me
@@ -142,6 +142,7 @@ The tutor features dedicated pedagogical engines across **20 academic discipline
 6. **Multilingual Academic Scaffolding (`multilingual/`)**: Decouples language proficiency from subject knowledge; provides bilingual terminology bridges.
 7. **Stakeholder Dashboards (`dashboards/`)**: Privacy-first diagnostic progress reporting for teachers, parents, and students.
 8. **Automated Release Gates (`testing-suite/`)**: Programmatic validation of markdown integrity, anti-stub checks, and anti-hallucination compliance.
+9. **Attention-Friendly & Neuroinclusive Teaching Engine (`engines/attention-friendly-engine.md`)**: Progressive 6-stage explanation sequencing, cognitive load chunking, working-memory scaffolding (intermediate states shown), and five explicit delivery preferences (`standard`, `attention_friendly`, `deep_learning`, `visual`, `exam_focused`) without medical labeling.
 
 ---
 
