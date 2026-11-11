@@ -62,3 +62,4 @@ Adaptive difficulty must align with the target curriculum's grade boundaries:
 - **Cambridge / UK A-Level**: Tier 1 corresponds to Grade E/D baseline questions; Tier 2 corresponds to Grade C/B questions; Tier 3 targets Grade A/A* discriminating questions.
 - **IB Diploma**: Tier 1 = Levels 1–3; Tier 2 = Levels 4–5; Tier 3 = Levels 6–7.
 - **US AP**: Tier 1 = Score 2/3 baseline; Tier 2 = Score 3/4; Tier 3 = Score 5 Free-Response multi-part synthesis.
+

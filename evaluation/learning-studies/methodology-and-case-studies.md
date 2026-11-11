@@ -65,3 +65,4 @@ All future empirical trials conducted with students or simulated cognitive agent
 - Students in the control condition experienced cognitive offloading, reporting high satisfaction initially but struggling when prompted to explain the calculus mechanism without AI assistance.
 - Students in the tutor condition demonstrated far-transfer success when solving novel physics optimization problems.
 ```
+

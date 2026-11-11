@@ -1,6 +1,6 @@
 {
   "name": "student-academic-tutor",
-  "version": "1.2.0",
+  "version": "1.4.0",
   "description": "An adaptive, evidence-informed academic teaching intelligence.",
   "entrypoint": "SKILL.md",
   "compatibility": {
@@ -19,10 +19,12 @@
     "pedagogy": "pedagogy/",
     "modes": "modes/",
     "assessments": "assessments/",
+    "knowledge-base": "knowledge-base/",
     "references": "references/",
-    "evaluation": "evaluation/"
+    "evaluation": "evaluation/",
+    "docs": "docs/"
   },
-  "supported_curricula_count": 21,
-  "supported_subjects_count": 13,
+  "supported_curricula_count": 30,
+  "supported_subjects_count": 20,
   "supported_modes_count": 7
 }

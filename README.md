@@ -5,17 +5,18 @@
 ### *An Evidence-Informed, Cross-Platform Instructional Architecture for LLM Agents*
 
 [![License: Apache 2.0](https://img.shields.io/badge/License-Apache%202.0-blue.svg?style=for-the-badge)](https://opensource.org/licenses/Apache-2.0)
-[![Version](https://img.shields.io/badge/version-1.3.0-orange.svg?style=for-the-badge)]()
+[![Version](https://img.shields.io/badge/version-1.4.0-orange.svg?style=for-the-badge)]()
 [![Platform: Cross-LLM](https://img.shields.io/badge/Platform-Claude%20%7C%20Gemini%20%7C%20Codex%20%7C%20Manus-8A2BE2.svg?style=for-the-badge)](docs/installation/platform-setup.md)
-[![Curricula: 21 Supported](https://img.shields.io/badge/Curricula-21%20Verified%20Guides-success.svg?style=for-the-badge)](curricula/source-registry/verified-sources.md)
-[![Subjects: 13 Specialisms](https://img.shields.io/badge/Subjects-13%20Engines-brightgreen.svg?style=for-the-badge)]()
+[![Curricula: 30 Supported](https://img.shields.io/badge/Curricula-30%20Verified%20Guides-success.svg?style=for-the-badge)](curricula/source-registry/verified-sources.md)
+[![Subjects: 20 Specialisms](https://img.shields.io/badge/Subjects-20%20Engines-brightgreen.svg?style=for-the-badge)]()
 [![Cognitive Offloading: Protected](https://img.shields.io/badge/Integrity-Socratic%20Fence%20Protected-red.svg?style=for-the-badge)](core/academic-integrity.md)
 
 <br/>
 
 **[Architecture](#-modular-system-architecture)** •
 **[Core Capabilities](#-15-foundational-pedagogical-capabilities)** •
-**[Supported Curricula](#-curricula--admissions-examinations-21-verified-guides)** •
+**[Supported Curricula (30)](#-curricula--admissions-examinations-30-verified-guides)** •
+**[Subject Engines (20)](#-specialized-subject-teaching-engines-20)** •
 **[Exam Mode & Past Papers](#-examination-mode--past-paper-synthesis)** •
 **[Installation & Setup](#-installation--platform-setup)** •
 **[Quality Assurance & Benchmarks](#-operational-quality-assurance--benchmarks)** •
@@ -38,6 +39,7 @@ This skill provides an operational framework that:
 - Enforces a **10-stage lesson architecture** moving from concrete foundations to abstract problem solving.
 - Integrates an empirical **misconception knowledge base** to address the root causes of student errors.
 - Provides **past-paper reverse-engineering protocols** for synthesizing curriculum-aligned practice questions without hallucination.
+- Powers deep domain instruction across **20 specialized subject engines** and **30 worldwide curricula**.
 
 ```
                     ┌────────────────────────────────────────┐
@@ -95,32 +97,68 @@ flowchart LR
 
 ---
 
-## 📚 Curricula & Admissions Examinations (21 Verified Guides)
+## 🔬 Specialized Subject Teaching Engines (20)
+
+Each discipline possesses an independent teaching engine with specific pedagogical strategies:
+
+1. **Mathematics** (`subjects/mathematics/engine.md`): Step-by-step derivations, proof rigour, LaTeX formatting, and error-point isolation.
+2. **Physics** (`subjects/physics/engine.md`): Dimensional checks, free-body diagrams (FBDs), and vector decomposition.
+3. **Chemistry** (`subjects/chemistry/engine.md`): Johnstone's triangle (Macroscopic $\to$ Submicroscopic $\to$ Symbolic).
+4. **Biology** (`subjects/biology/engine.md`): Connected metabolic systems, genetic inheritance, Punnett squares, and textual diagrams.
+5. **Economics** (`subjects/economics/engine.md`): Positive vs. normative separation, diagram shifts, and balanced policy evaluation.
+6. **Computer Science** (`subjects/computer-science/engine.md`): Big-O notation, algorithm tracing, data structures, and debugging.
+7. **History** (`subjects/history/engine.md`): Source criticism, historiographical debate, causality, and chronology.
+8. **English Language & Literature** (`subjects/english/engine.md`): Structural rhetoric, PEEL analytical essays, and close reading.
+9. **Geography** (`subjects/geography/engine.md`): Spatial analysis, GIS, physical landforms, and human development case studies.
+10. **Business Studies** (`subjects/business-studies/engine.md`): Strategic evaluation, marketing, operations, and business reports.
+11. **Accounting** (`subjects/accounting/engine.md`): Fundamental equation ($A = L + E$), DEAD CLIC rule, ledger T-accounts, and ratios.
+12. **Statistics** (`subjects/statistics/engine.md`): Probability distributions, hypothesis testing protocols, and $p$-value remediation.
+13. **Psychology** (`subjects/psychology/engine.md`): AO1/AO2/AO3 framework, methodological critique, and ethical guidelines.
+14. **Philosophy** (`subjects/philosophy/engine.md`): Formal standard-form arguments, epistemology, ethics, metaphysics, and Socratic testing.
+15. **Sociology** (`subjects/sociology/engine.md`): Functionalism, Marxism, Feminism, Interactionism, research methods, and social stratification.
+16. **Environmental Science** (`subjects/environmental-science/engine.md`): Earth systems, biogeochemical cycles, climate dynamics, and policy modeling.
+17. **Law & Jurisprudence** (`subjects/law/engine.md`): IRAC method, statutory interpretation, judicial precedent, tort, criminal, and contract law.
+18. **Engineering Sciences** (`subjects/engineering/engine.md`): Statics, structural mechanics, fluid dynamics, thermodynamics, and circuit laws.
+19. **Medicine & Health Sciences** (`subjects/medicine-health/engine.md`): Human physiology, pharmacology, microbiology, and clinical diagnostic reasoning (VINDICATE).
+20. **Linguistics** (`subjects/linguistics/engine.md`): IPA phonetics, phonology, morphology, syntax trees (X-bar), semantics, and Olympiad analysis.
+
+---
+
+## 📚 Curricula & Admissions Examinations (30 Verified Guides)
 
 Each curriculum guide provides verified examining authorities, current specification codes, command-word taxonomies, and assessment rubrics tracked in our [Official Source Registry](curricula/source-registry/verified-sources.md):
 
-### 🌍 Global Secondary & High School Systems
-- 🇬🇧 **Cambridge IGCSE & International A-Level**: Assessment objectives (AO1, AO2, AO3), command words, and practical paper skills.
-- 🌐 **International Baccalaureate (IB DP & MYP)**: 7-point scale, Internal Assessments (IA), Theory of Knowledge (TOK), and Extended Essay (EE).
-- 🇬🇧 **UK GCSE & A-Level**: AQA, Edexcel, and OCR boards, 9–1 grading, and UCAS university preparation.
-- 🇺🇸 **Advanced Placement (AP)**: College Board curricula, Free Response Question (FRQ) analytical scoring rubrics.
-- 🇮🇳 **CBSE & ICSE (India)**: NCERT textbook alignment, Class 10/12 board exams, and foundation for JEE/NEET.
-- 🇰🇪 **Kenya CBC**: Competency-Based Curriculum, formative pathways, and junior/senior secondary alignment.
-- 🇺🇬 **Uganda UNEB**: Uganda Certificate of Education (UCE) & Uganda Advanced Certificate of Education (UACE).
-- 🇸🇸 **South Sudan NEC**: National secondary curriculum adaptation with low-bandwidth, low-resource pedagogical adjustments.
-- 🌍 **West Africa WAEC / WASSCE**: 9-point grading system (A1–F9), Paper 1 objective speed drills, and Paper 2 theory presentation.
-- 🇦🇺 **Australian Senior Secondary (VCE & HSC)**: ATAR percentile ranking, CAS calculator efficiency, and Depth Studies.
-- 🇫🇷 **French Baccalauréat Général**: *Enseignements de Spécialité (EDS)*, 3-part dissertation structures, and *Le Grand Oral* defense.
-- 🇩🇪 **German Abitur**: Gymnasiale Oberstufe (*LK* vs. *GK*) and cognitive demand fields (*Anforderungsbereiche AFB I, II, III*).
-- 🇸🇬 **Singapore-Cambridge GCE A-Level**: H1, H2, and university-level H3 modules, mathematical proof rigour, and General Paper (GP).
+### 🌍 Global Secondary & High School Systems (24)
+- 🇬🇧 **Cambridge IGCSE & International A-Level**
+- 🌐 **International Baccalaureate (IB DP & MYP)**
+- 🇬🇧 **UK GCSE & A-Level** (AQA, Edexcel, OCR)
+- 🇺🇸 **Advanced Placement (AP)** (College Board)
+- 🇮🇳 **CBSE & ICSE** (India - NCERT Framework)
+- 🇰🇪 **Kenya CBC** (Competency-Based Curriculum)
+- 🇺🇬 **Uganda UNEB** (UCE & UACE)
+- 🇸🇸 **South Sudan NEC** (Secondary Education Certificate)
+- 🌍 **West Africa WAEC / WASSCE** (Nigeria, Ghana, Sierra Leone, Gambia, Liberia)
+- 🇦🇺 **Australian Senior Secondary** (VCE & HSC / ATAR Scaled)
+- 🇫🇷 **French Baccalauréat Général** (*EDS* & *Grand Oral*)
+- 🇩🇪 **German Abitur** (Gymnasiale Oberstufe, *AFB I, II, III*)
+- 🇸🇬 **Singapore-Cambridge GCE A-Level** (H1, H2, H3)
+- 🇿🇦 **South African National Senior Certificate** (CAPS & IEB Matric)
+- 🇨🇦 **Canadian Ontario OSSD** (Grade 11–12 University Prep)
+- 🇨🇳 **China Gaokao** (高考 - New "3+1+2" Model)
+- 🇯🇵 **Japan Common Test** (大学入学共通テスト - Kyōtsū Test)
+- 🇧🇷 **Brazilian ENEM** (TRI Item Response Theory & 1,000-Point Redação)
+- 🇳🇿 **New Zealand NCEA** (Achievement Standards: Achieved, Merit, Excellence)
+- 🇮🇪 **Irish Leaving Certificate** (Ardteistiméireacht - CAO Points H1–H8)
+- 🏴󠁧󠁢󠁳󠁣󠁴󠁿 **Scottish SQA Highers & Advanced Highers** (CfE Framework)
+- 🌴 **Caribbean Examinations Council CXC** (CSEC & CAPE)
 
-### 🎓 Standardized Admissions & Professional Licensure
-- 🏛️ **Digital SAT & ACT**: Multistage adaptive testing (MST) routing, Desmos integration, ACT Science reasoning.
-- 📈 **GRE General & GMAT Focus Edition**: Quantitative Comparison (QC), GMAT Data Sufficiency elimination, and Data Insights.
-- 🗣️ **IELTS Academic & TOEFL iBT**: 9-Band writing rubrics (Task 1 Overview + Task 2 arguments) and integrated speaking tasks.
-- 🩺 **MCAT & USMLE Step 1 / Step 2 CK**: Multi-sentence clinical vignettes, organ system pathophysiology, and CARS passages.
-- ⚖️ **LSAT**: Formal conditional logic symbolization, flaw detection, and assumption negation techniques.
-- 🎓 **University Undergraduate & Postgraduate**: Research synthesis, lab reports, formal academic proofs, and thesis defense.
+### 🎓 Standardized Admissions & Professional Licensure (6)
+- 🏛️ **Digital SAT & ACT** (Undergraduate Admissions)
+- 📈 **GRE General & GMAT Focus Edition** (Graduate & Business Admissions)
+- 🗣️ **IELTS Academic & TOEFL iBT** (English Language Proficiency)
+- 🩺 **MCAT & USMLE Step 1 / Step 2 CK** (Medical Admissions & Licensing)
+- ⚖️ **LSAT** (Law School Admission Test)
+- 🎓 **University Undergraduate & Postgraduate** (Academic Research & Theses)
 
 ---
 
@@ -156,7 +194,7 @@ The repository includes an active evaluation architecture to ensure pedagogical 
 
 - **Golden Datasets (`evaluation/golden-datasets/reference-items-v1.json`)**: Verifiable test items across calculus, physics kinematics, chemical equilibrium, genetics, and macroeconomics with explicit mark-scheme criteria.
 - **Model Benchmarking Protocols (`evaluation/model-benchmarks/benchmark-protocol.md`)**: Operational guidelines for testing the skill across Claude, Gemini, Codex, and GPT models.
-- **Source Registry (`curricula/source-registry/verified-sources.md`)**: Tracks official syllabus URLs, specification codes, and last-reviewed verification dates.
+- **Source Registry (`curricula/source-registry/verified-sources.md`)**: Tracks official syllabus URLs, specification codes, and last-reviewed verification dates across all 30 curricula.
 - **Misconception Knowledge Base (`knowledge-base/misconceptions/catalog.md`)**: Empirical catalog detailing common misconceptions, diagnostic questions, and remediation protocols across core subjects.
 - **Uncertainty Management Protocol (`core/uncertainty-management.md`)**: Explicit guidelines mandating epistemic honesty, boundary disclosures, and citation integrity.
 
@@ -213,23 +251,27 @@ student-academic-tutor/
 │   ├── progress-engine.md                # Topic-level mastery matrix (Novice -> Mastered)
 │   └── visual-learning-engine.md         # ASCII diagrams, Mermaid graphs, LaTeX & PhET links
 │
-├── subjects/                             # 13 dedicated subject teaching engines
-│   ├── mathematics/                      ├── computer-science/             ├── accounting/
-│   ├── physics/                          ├── history/                      ├── statistics/
-│   ├── chemistry/                        ├── english/                      └── psychology/
-│   ├── biology/                          ├── geography/
-│   └── economics/                        └── business-studies/
+├── subjects/                             # 20 dedicated subject teaching engines
+│   ├── mathematics/                      ├── computer-science/             ├── law/
+│   ├── physics/                          ├── history/                      ├── engineering/
+│   ├── chemistry/                        ├── english/                      ├── medicine-health/
+│   ├── biology/                          ├── geography/                    ├── linguistics/
+│   ├── economics/                        ├── business-studies/             ├── statistics/
+│   ├── philosophy/                       ├── accounting/                   └── psychology/
+│   └── sociology/                        └── environmental-science/
 │
-├── curricula/                            # 21 verified secondary, university & professional guides
+├── curricula/                            # 30 verified secondary, university & professional guides
 │   ├── source-registry/                  # Official syllabus portal links & verification dates
 │   ├── cambridge-igcse/                  ├── kenya-cbc/                    ├── sat-act/
 │   ├── cambridge-a-level/                ├── uganda/                       ├── gre-gmat/
 │   ├── ib/                               ├── south-sudan/                  ├── ielts-toefl/
 │   ├── gcse/                             ├── waec-wassce/                  ├── mcat-usmle/
 │   ├── a-level/                          ├── australia-vce-hsc/            ├── lsat/
-│   ├── ap/                               ├── french-baccalaureat/          └── university/
-│   └── cbse/                             ├── german-abitur/
-│                                         └── singapore-gce-al/
+│   ├── ap/                               ├── french-baccalaureat/          ├── south-africa-caps-iebe/
+│   ├── cbse/                             ├── german-abitur/                ├── canada-ontario-ossd/
+│   ├── china-gaokao/                     ├── singapore-gce-al/             ├── new-zealand-ncea/
+│   ├── japan-common-test/                ├── ireland-leaving-cert/         ├── caribbean-csec-cape/
+│   └── brazil-enem/                      └── scotland-sqa-highers/         └── university/
 │
 ├── pedagogy/                             # 7 evidence-based learning frameworks
 │   ├── retrieval-practice.md             ├── worked-examples.md            └── metacognition.md

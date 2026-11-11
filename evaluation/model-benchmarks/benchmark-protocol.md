@@ -48,3 +48,4 @@ Each evaluation run across a target model must be logged in this directory using
 ## 3. Regression Prevention
 
 Whenever a modification is made to `SKILL.md`, `core/`, or any subject engine, run the automated regression suite in `evaluation/regression-tests/` to confirm that accuracy on golden test items does not degrade.
+

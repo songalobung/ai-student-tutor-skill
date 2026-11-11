@@ -70,3 +70,4 @@ The Student Academic Tutor is an architecture designed for deployment across lea
 2. Create a new Modelfile inheriting from your preferred base model (e.g., `llama3.3:70b` or `qwen2.5:32b`).
 3. In the System Prompt section, paste `SKILL.md`.
 4. Upload `knowledge-base/` and `assessments/` into Open WebUI Knowledge collections for RAG retrieval during student study sessions.
+

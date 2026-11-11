@@ -44,3 +44,4 @@ Before certifying a student as "Mastered" in any topic, the tutor must administe
 If a student solves drill problems with 100% accuracy but fails the transfer challenge:
 1. **Surface-Feature Fixation**: The student relies on superficial cues (e.g., memorizing which letters go where) rather than understanding the underlying structural relationship.
 2. **Remediation**: Use **Analogical Comparison**. Present two structurally identical problems from different domains side-by-side, prompting the student to map the corresponding variables.
+

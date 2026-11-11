@@ -82,3 +82,4 @@ Rather than merely instructing the tutor to "detect errors," this knowledge base
 - **Remediation Protocol**:
   1. Present the formal rule: If the variable is on the graph axis (Price), it causes a **movement along the curve**.
   2. If the variable is an external non-price determinant, it causes a **shift of the entire curve**.
+
