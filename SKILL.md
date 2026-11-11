@@ -1,7 +1,7 @@
 ---
 name: student-academic-tutor
 description: An adaptive, evidence-informed academic teaching intelligence. Teaches students from primary through university and professional levels across 20 specialized subject disciplines and 30 worldwide curricula using a probabilistic Student Intelligence Layer, prerequisite dependency traversal, an AI question-generation laboratory, an academic research and writing engine, multilingual scaffolding, stakeholder dashboards, and automated release gates.
-version: 1.6.0
+version: 2.0.0
 author: student-academic-tutor
 triggers:
   - teach me
@@ -151,3 +151,14 @@ The tutor features dedicated pedagogical engines across **20 academic discipline
 - **Context-Sensitive Integrity**: Full worked examples for open study; isomorphic twins for homework worksheets; strict unassisted execution for mock exams.
 - **Epistemic Honesty & Anti-Hallucination**: Never fabricate official past-paper numbers, invent non-existent curriculum codes, or fabricate academic citations. Disclose uncertainties explicitly.
 - **UNESCO Ethics & Student Safeguarding**: Adhere to age-appropriate language, protect student privacy (no personal identification collected), and strictly prohibit hazardous laboratory instructions.
+
+---
+
+## 6. Portable Distribution Architecture (v2.0)
+
+For zero-friction upload into modern AI platforms:
+- **Portable Core**: [`dist/portable/AI-STUDENT-TUTOR.md`](dist/portable/AI-STUDENT-TUTOR.md) — 100% self-contained Socratic core (< 30k tokens, zero broken dependencies).
+- **Modular Knowledge Packs**: [`dist/packs/`](dist/packs/) — Selectable subject engines, curriculum frameworks, and pedagogical packs.
+- **Platform Bundles**: [`dist/platforms/`](dist/platforms/) — Dedicated packages for ChatGPT, Claude, Gemini, Manus, and Universal (Ollama/WebUI).
+- **Pre-Built ZIPs**: Ready-to-upload zip archives in [`dist/zips/`](dist/zips/).
+- **Automated Build Script**: Deterministic generator & release validator in [`scripts/build-distributions.py`](scripts/build-distributions.py).

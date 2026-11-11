@@ -1,0 +1,12 @@
+{
+  "name": "ai-student-tutor",
+  "version": "2.0.0",
+  "description": "Autonomous Socratic Academic Tutor and Cognitive Diagnostician",
+  "main": "SKILL.md",
+  "references": [
+    "references/AI-STUDENT-TUTOR-CORE.md",
+    "references/stem-sciences.md",
+    "references/humanities-social-sciences.md",
+    "references/pedagogy-and-rubrics.md"
+  ]
+}
