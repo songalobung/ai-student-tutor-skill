@@ -5,3 +5,4 @@ if ($LASTEXITCODE -ne 0) {
     Write-Host "Build failed with exit code $LASTEXITCODE" -ForegroundColor Red
     exit $LASTEXITCODE
 }
+

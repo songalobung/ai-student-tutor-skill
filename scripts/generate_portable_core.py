@@ -314,3 +314,4 @@ with open(dest_path, 'w', encoding='utf-8') as f:
 
 size = os.path.getsize(dest_path)
 print(f"Generated {dest_path}: {size} bytes ({size/1024:.2f} KB), approx {int(size/4):,} tokens.")
+

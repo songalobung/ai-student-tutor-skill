@@ -256,3 +256,4 @@ with open(index_path, 'w', encoding='utf-8') as f:
     f.write("\n".join(index_lines) + "\n")
 
 print(f"Generated {index_path} successfully.")
+
