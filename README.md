@@ -2,22 +2,23 @@
 
 # 🎓 AI Student Academic Tutor Skill
 
-### *An Evidence-Informed, Cross-Platform Cognitive Teaching Intelligence*
+### *An Evidence-Informed, Cross-Platform Instructional Architecture for LLM Agents*
 
 [![License: Apache 2.0](https://img.shields.io/badge/License-Apache%202.0-blue.svg?style=for-the-badge)](https://opensource.org/licenses/Apache-2.0)
-[![Version](https://img.shields.io/badge/version-1.2.0-orange.svg?style=for-the-badge)]()
-[![Platform: Cross-LLM](https://img.shields.io/badge/Platform-Claude%20%7C%20Gemini%20%7C%20Codex%20%7C%20Manus-8A2BE2.svg?style=for-the-badge)]()
-[![Curricula: 21 Supported](https://img.shields.io/badge/Curricula-21%20Supported-success.svg?style=for-the-badge)]()
+[![Version](https://img.shields.io/badge/version-1.3.0-orange.svg?style=for-the-badge)]()
+[![Platform: Cross-LLM](https://img.shields.io/badge/Platform-Claude%20%7C%20Gemini%20%7C%20Codex%20%7C%20Manus-8A2BE2.svg?style=for-the-badge)](docs/installation/platform-setup.md)
+[![Curricula: 21 Supported](https://img.shields.io/badge/Curricula-21%20Verified%20Guides-success.svg?style=for-the-badge)](curricula/source-registry/verified-sources.md)
 [![Subjects: 13 Specialisms](https://img.shields.io/badge/Subjects-13%20Engines-brightgreen.svg?style=for-the-badge)]()
-[![Cognitive Offloading: Protected](https://img.shields.io/badge/Integrity-Socratic%20Fence%20Protected-red.svg?style=for-the-badge)]()
+[![Cognitive Offloading: Protected](https://img.shields.io/badge/Integrity-Socratic%20Fence%20Protected-red.svg?style=for-the-badge)](core/academic-integrity.md)
 
 <br/>
 
 **[Architecture](#-modular-system-architecture)** •
 **[Core Capabilities](#-15-foundational-pedagogical-capabilities)** •
-**[Supported Curricula](#-curricula--admissions-examinations-21)** •
+**[Supported Curricula](#-curricula--admissions-examinations-21-verified-guides)** •
 **[Exam Mode & Past Papers](#-examination-mode--past-paper-synthesis)** •
-**[Installation & Usage](#-installation--usage-guide)** •
+**[Installation & Setup](#-installation--platform-setup)** •
+**[Quality Assurance & Benchmarks](#-operational-quality-assurance--benchmarks)** •
 **[Research Foundations](#-educational-research-foundations)**
 
 <br/>
@@ -26,17 +27,31 @@
 
 </div>
 
-## 🌟 Executive Overview
+## 🌟 Overview
 
-The **AI Student Academic Tutor Skill** is a production-grade, pedagogically grounded instruction architecture that transforms leading Large Language Models (**Claude, Gemini, Codex, Manus, ChatGPT Projects, Open WebUI**) from passive answer generators into an **adaptive master academic tutor**.
+The **AI Student Academic Tutor Skill** is an evidence-informed instructional architecture designed for deployment across leading Large Language Model agents (**Claude, Gemini, Codex, Manus, ChatGPT Projects, Open WebUI**).
 
-Traditional LLMs suffer from the **"Cognitive Offloading Trap"** (Stanford SCALE 2025/2026): when students ask for homework help, standard AI models output final solutions immediately, short-circuiting learning and causing longitudinal retention to collapse. 
+Traditional LLMs often act as passive answer vending machines. When students ask for homework help, baseline models output completed answers immediately—triggering **cognitive offloading** where the student bypasses the productive struggle necessary to build conceptual understanding and long-term retention (Sweller et al., 2019; Stanford SCALE Initiative).
 
-This skill enforces a **Socratic Fence**, a **10-stage lesson architecture**, **Knowledge Tracing (KT4EQG)**, and **past-paper reverse-engineering** to guide students to genuine conceptual abstraction, procedural fluency, and examination mastery.
+This skill provides an operational framework that:
+- Establishes a **contextual integrity boundary** (distinguishing independent conceptual study from graded homework and formal exams).
+- Enforces a **10-stage lesson architecture** moving from concrete foundations to abstract problem solving.
+- Integrates an empirical **misconception knowledge base** to address the root causes of student errors.
+- Provides **past-paper reverse-engineering protocols** for synthesizing curriculum-aligned practice questions without hallucination.
 
-<div align="center">
-  <img src="https://raw.githubusercontent.com/songalobung/ai-student-tutor-skill/main/docs/assets/banner.png" alt="Tutor Banner" width="800" onerror="this.style.display='none'"/>
-</div>
+```
+                    ┌────────────────────────────────────────┐
+                    │       Student Academic Tutor           │
+                    └──────────────────┬─────────────────────┘
+                                       │
+         ┌─────────────────────────────┼─────────────────────────────┐
+         ▼                             ▼                             ▼
+┌──────────────────┐         ┌───────────────────┐         ┌──────────────────┐
+│ Diagnostic-First │         │  Socratic Fence   │         │  Spaced Recall   │
+│ Prerequisite Gap │         │   Gradual Release │         │  Long-Term       │
+│ Isolation        │         │   Scaffolding     │         │  Retention       │
+└──────────────────┘         └───────────────────┘         └──────────────────┘
+```
 
 ---
 
@@ -51,7 +66,7 @@ flowchart LR
 ```
 
 1. **Understand the Student Before Teaching**: Conducts rapid diagnostic checks on upstream prerequisite competencies (e.g., verifying index laws before teaching calculus differentiation).
-2. **Understand the Subject Before Explaining**: Connects macroscopic observations, submicroscopic particle models, and formal mathematical symbolism.
+2. **Understand the Subject Before Explaining**: Connects macroscopic phenomena, submicroscopic particle models, and formal mathematical symbolism.
 3. **Identify Why the Student Is Struggling**: Analyzes erroneous derivations using *"Show Me Where I Went Wrong"* mode, isolating cognitive misconceptions from arithmetic slips.
 4. **Adapt Instruction Until Mastery Is Demonstrated**: Progresses through **Concrete $\to$ Pictorial $\to$ Abstract** representations with faded worked examples.
 5. **Measure Independent Application & Delayed Retention**: Evaluates understanding using unassisted transfer problems and expanding-interval retrieval practice.
@@ -66,26 +81,26 @@ flowchart LR
 | **02** | **Personalized Learning Pathways** | Adapts pacing, difficulty, and sequencing to demonstrated competency. | `engines/personalised-learning.md` |
 | **03** | **Conceptual Teaching** | Explains underlying mechanisms rather than promoting mechanical rote memorization. | `core/academic-philosophy.md` |
 | **04** | **Step-by-Step Problem Solving** | Deconstructs multi-stage reasoning problems into manageable cognitive steps. | `subjects/mathematics/engine.md` |
-| **05** | **Misconception Fingerprinting** | Recognizes recurring student error patterns and delivers targeted remedies. | `engines/misconception-engine.md` |
-| **06** | **Adaptive Difficulty Scaling** | Progresses through Tier 1 (Drill) $\to$ Tier 2 (Intermediate) $\to$ Tier 3 (Synoptic). | `assessments/question-generation.md` |
+| **05** | **Misconception Fingerprinting** | Recognizes recurring student error patterns and delivers targeted remedies. | `knowledge-base/misconceptions/catalog.md` |
+| **06** | **Adaptive Difficulty Scaling** | Progresses through Tier 1 (Drill) $\to$ Tier 2 (Intermediate) $\to$ Tier 3 (Synoptic). | `engines/adaptive-difficulty.md` |
 | **07** | **Intelligent Formative Feedback** | Actionable corrections highlighting *why* marks were lost, not just marking wrong. | `assessments/marking-rubrics.md` |
 | **08** | **Faded Worked Examples** | Demonstrates complete solutions, gradually fading scaffolding (I do $\to$ We do $\to$ You do). | `pedagogy/worked-examples.md` |
 | **09** | **Retrieval Practice** | Low-stakes recall testing without notes to strengthen long-term memory traces. | `pedagogy/retrieval-practice.md` |
 | **10** | **Spaced Revision Scheduling** | Schedules review sessions based on the Ebbinghaus forgetting curve. | `engines/revision-engine.md` |
 | **11** | **Examination Preparation** | Teaches exam technique, time management, command words, and mark allocation. | `engines/examination-engine.md` |
-| **12** | **Practical & Laboratory Learning** | Integrates virtual experiment protocols, risk assessments, and variables. | `subjects/physics/engine.md` |
+| **12** | **Learning Transfer Verification**| Tests whether students can apply knowledge to unfamiliar, cross-disciplinary problems. | `engines/learning-transfer.md` |
 | **13** | **Granular Progress Tracking** | Maintains a 4-dimensional mastery matrix across discrete syllabus objectives. | `engines/progress-engine.md` |
 | **14** | **Metacognitive Development** | Prompts self-reflection, confidence calibration, and self-explanation. | `pedagogy/metacognition.md` |
-| **15** | **Academic Integrity (Socratic Fence)**| Refuses to complete homework outright; guides understanding via isomorphic twins. | `core/academic-integrity.md` |
+| **15** | **Academic Integrity & Socratic Fence**| Contextually adapts assistance: full worked examples for study; isomorphic twins for homework. | `core/academic-integrity.md` |
 
 ---
 
-## 📚 Curricula & Admissions Examinations (21 Supported)
+## 📚 Curricula & Admissions Examinations (21 Verified Guides)
 
-The skill features full syllabus mappings, command-word taxonomies, and assessment rubrics across **21 global education systems**:
+Each curriculum guide provides verified examining authorities, current specification codes, command-word taxonomies, and assessment rubrics tracked in our [Official Source Registry](curricula/source-registry/verified-sources.md):
 
 ### 🌍 Global Secondary & High School Systems
-- 🇬🇧 **Cambridge IGCSE & International A-Level**: Strict assessment objectives (AO1, AO2, AO3), command words, and practical paper skills.
+- 🇬🇧 **Cambridge IGCSE & International A-Level**: Assessment objectives (AO1, AO2, AO3), command words, and practical paper skills.
 - 🌐 **International Baccalaureate (IB DP & MYP)**: 7-point scale, Internal Assessments (IA), Theory of Knowledge (TOK), and Extended Essay (EE).
 - 🇬🇧 **UK GCSE & A-Level**: AQA, Edexcel, and OCR boards, 9–1 grading, and UCAS university preparation.
 - 🇺🇸 **Advanced Placement (AP)**: College Board curricula, Free Response Question (FRQ) analytical scoring rubrics.
@@ -135,19 +150,31 @@ In **Examination Mode** (`modes/examination.md`), the tutor acts as an expert ex
 
 ---
 
+## 🔍 Operational Quality Assurance & Benchmarks
+
+The repository includes an active evaluation architecture to ensure pedagogical quality:
+
+- **Golden Datasets (`evaluation/golden-datasets/reference-items-v1.json`)**: Verifiable test items across calculus, physics kinematics, chemical equilibrium, genetics, and macroeconomics with explicit mark-scheme criteria.
+- **Model Benchmarking Protocols (`evaluation/model-benchmarks/benchmark-protocol.md`)**: Operational guidelines for testing the skill across Claude, Gemini, Codex, and GPT models.
+- **Source Registry (`curricula/source-registry/verified-sources.md`)**: Tracks official syllabus URLs, specification codes, and last-reviewed verification dates.
+- **Misconception Knowledge Base (`knowledge-base/misconceptions/catalog.md`)**: Empirical catalog detailing common misconceptions, diagnostic questions, and remediation protocols across core subjects.
+- **Uncertainty Management Protocol (`core/uncertainty-management.md`)**: Explicit guidelines mandating epistemic honesty, boundary disclosures, and citation integrity.
+
+---
+
 ## 🔬 Educational Research Foundations
 
-The entire architecture is grounded in peer-reviewed cognitive science, meta-analyses, and educational AI guidelines:
+The architecture is grounded in peer-reviewed cognitive science, meta-analyses, and educational AI guidelines:
 
 ```
 ├── Ma et al. (2014)          -> ITS Meta-Analysis (N=14,321; g=0.42-0.57 positive effect size)
-├── Agarwal et al. (2021)     -> Systematic Review of Retrieval Practice (50 classroom RCTs)
-├── Murray et al. (2025)      -> Spaced vs. Massed Mathematical Problem Solving Meta-Analysis
-├── Sweller et al. (2024)     -> Cognitive Load Theory & Faded Worked Examples (I do, We do, You do)
-├── Stanford SCALE (2025/26)  -> The Cognitive Offloading Hazard: Socratic Scaffolding (d=+0.52)
-├── Bardach et al. (2025)     -> Teacher Orchestration & Naturalistic Classroom Retention
-├── Liu et al. (2025)         -> KT4EQG: Knowledge Tracing for Targeted Question Generation
-└── UNESCO (2023/2026)        -> Ethical, Safe, and Age-Appropriate AI in Education Guidelines
+├── Steenbergen-Hu (2014)     -> ITS in Higher Education Meta-Analysis (N=4,792; g=0.32)
+├── Huang et al. (2021)       -> Meta-Analysis of RCTs on Intelligent Tutoring (N=10,217; g=0.43)
+├── Agarwal et al. (2021)     -> Systematic Review of Retrieval Practice (50 classroom experiments)
+├── Murray et al. (2023)      -> Spaced vs. Massed Mathematics Meta-Analysis (g=0.38)
+├── Sweller et al. (2019)     -> Cognitive Load Theory, Worked Examples, and Faded Scaffolding
+├── Hattie & Timperley (2007) -> Process and Self-Regulation Feedback over Personal Praise (d=0.74)
+└── UNESCO (2023)             -> Guidance for Generative AI in Education and Research
 ```
 
 *For complete citations and implementation notes, see [`references/research-foundations.md`](references/research-foundations.md).*
@@ -167,11 +194,12 @@ student-academic-tutor/
 │   ├── teaching-protocol.md              # 10-stage lesson protocol & decision trees
 │   ├── student-profiling.md             # Learner model schema & confidence calibration
 │   ├── learning-science.md               # Empirical research (retrieval, spacing, cognitive load)
-│   ├── academic-integrity.md             # Anti-cheating, homework guidance & independent thought
-│   ├── accuracy-standards.md             # Mathematical verification & epistemic humility
+│   ├── academic-integrity.md             # Context-sensitive integrity boundaries & isomorphic twins
+│   ├── accuracy-standards.md             # Mathematical verification & calculation rigor
+│   ├── uncertainty-management.md         # Epistemic boundaries & source verification
 │   └── safeguarding.md                   # UNESCO compliance, student privacy & lab safety
 │
-├── engines/                              # 10 specialized teaching engines
+├── engines/                              # 12 specialized teaching engines
 │   ├── diagnostic-engine.md              # Prerequisite gap isolation & dependency graphs
 │   ├── personalised-learning.md          # Adaptive pathways & pacing decisions
 │   ├── curriculum-engine.md              # Syllabus mapping & command-word parsing
@@ -180,6 +208,8 @@ student-academic-tutor/
 │   ├── misconception-engine.md           # "Show me where I went wrong" & error fingerprinting
 │   ├── revision-engine.md                # Spaced repetition scheduling & retrieval practice
 │   ├── examination-engine.md             # Exam technique, mark maximization & command words
+│   ├── learning-transfer.md              # Intermediate & far conceptual transfer verification
+│   ├── adaptive-difficulty.md            # Rolling 3-attempt ZPD difficulty modulation
 │   ├── progress-engine.md                # Topic-level mastery matrix (Novice -> Mastered)
 │   └── visual-learning-engine.md         # ASCII diagrams, Mermaid graphs, LaTeX & PhET links
 │
@@ -190,7 +220,8 @@ student-academic-tutor/
 │   ├── biology/                          ├── geography/
 │   └── economics/                        └── business-studies/
 │
-├── curricula/                            # 21 global secondary, university & professional guides
+├── curricula/                            # 21 verified secondary, university & professional guides
+│   ├── source-registry/                  # Official syllabus portal links & verification dates
 │   ├── cambridge-igcse/                  ├── kenya-cbc/                    ├── sat-act/
 │   ├── cambridge-a-level/                ├── uganda/                       ├── gre-gmat/
 │   ├── ib/                               ├── south-sudan/                  ├── ielts-toefl/
@@ -212,33 +243,43 @@ student-academic-tutor/
 │
 ├── assessments/                          # Diagnostic batteries, question generation & marking rubrics
 │   ├── diagnostic-tests.md               ├── marking-rubrics.md
-│   ├── question-generation.md            └── benchmark-tests.md (2,000-item suite)
+│   ├── question-generation.md            └── benchmark-tests.md
+│
+├── knowledge-base/                       # Misconceptions & pedagogical diagnostics
+│   └── misconceptions/catalog.md         # Common errors, cognitive roots & remediation
 │
 ├── references/                           # Scientific literature & advanced enhancements
 │   ├── research-foundations.md           ├── advanced-enhancements.md
 │   └── multimodal-protocols.md           # Vision math recognition & speech-to-speech
 │
-└── evaluation/                           # Quality assurance & anti-hallucination benchmarks
-    ├── subject-accuracy.md               ├── assessment-reliability.md     └── learning-outcome-tests.md
-    ├── pedagogical-quality.md            ├── hallucination-tests.md
+├── evaluation/                           # Quality assurance, benchmarks & empirical studies
+│   ├── golden-datasets/                  # Verified executable reference items (JSON)
+│   ├── model-benchmarks/                 # Multi-model evaluation protocols
+│   ├── regression-tests/                 # Regression prevention testing
+│   ├── learning-studies/                 # Controlled empirical trial methodology
+│   ├── subject-accuracy.md               ├── assessment-reliability.md     └── learning-outcome-tests.md
+│   ├── pedagogical-quality.md            ├── hallucination-tests.md
+│
+└── docs/                                 # Platform-specific documentation
+    └── installation/platform-setup.md    # Instructions for Claude, Gemini, Codex, Manus
 ```
 
 ---
 
-## 🚀 Installation & Usage Guide
+## 🚀 Installation & Platform Setup
 
-### Compatible LLM Environments
+For detailed platform-specific installation steps, see [`docs/installation/platform-setup.md`](docs/installation/platform-setup.md).
 
-| Platform | Integration Method |
+| Platform | Setup Method |
 |---|---|
-| **Manus** | Point your workspace skill directory to `ai-student-tutor-skill/` or reference `SKILL.md`. |
-| **Claude / Claude Code** | Add to `.claude/skills/` or reference as a project instruction file. |
-| **Gemini CLI / Antigravity** | Clone into your workspace or skills folder; auto-discovered via `SKILL.md`. |
-| **Codex / OpenAI Assistants** | Upload as a Knowledge Vector Store with `SKILL.md` as the System Prompt. |
-| **ChatGPT Projects / Custom GPTs** | Paste `SKILL.md` into Custom Instructions; upload the directory as Project Files. |
-| **Open WebUI / Ollama** | Add as a System Prompt and Knowledge Base bundle. |
+| **Manus** | Point custom skills path to `ai-student-tutor-skill/` or reference `SKILL.md`. |
+| **Claude / Claude Code** | Copy into `~/.claude/skills/` or attach to a Claude Project with `SKILL.md` in instructions. |
+| **Gemini CLI / Antigravity** | Clone into workspace skills directory; auto-discovered via YAML frontmatter in `SKILL.md`. |
+| **OpenAI Codex / Assistants API** | Upload repository as a Knowledge Vector Store with `SKILL.md` as System Instructions. |
+| **ChatGPT Projects / Custom GPTs** | Paste `SKILL.md` into Custom Instructions; attach core markdown files as Knowledge. |
+| **Open WebUI / Ollama** | Create a custom Modelfile using `SKILL.md` as the system prompt. |
 
-### Quick Start: Git Clone
+### Quick Start via Git
 
 ```bash
 # Clone the complete skill repository
@@ -247,16 +288,6 @@ git clone https://github.com/songalobung/ai-student-tutor-skill.git
 # Enter repository
 cd ai-student-tutor-skill
 ```
-
-### Activation Prompts
-
-Once loaded into your LLM agent, trigger specialized modes instantly:
-
-- **Diagnostic Lesson**: *"Teach me integration by parts for Cambridge A-Level Maths. Start with a diagnostic."*
-- **Socratic Homework Help**: *"Help me understand this physics problem on projectile motion without giving away the final answer."*
-- **Past-Paper Mock Exam**: *"Give me a 3-question exam-style mock on market failure for IB Economics HL with a formal mark scheme."*
-- **Error Diagnosis**: *"Here is my calculus solution: [paste work]. Show me where I went wrong and why."*
-- **Oral Defense**: *"Run an oral examination on the French Revolution for A-Level History. Ask me probing questions one at a time."*
 
 ---
 

@@ -1,0 +1,127 @@
+{
+  "dataset_version": "1.0.0",
+  "created_at": "2026-11-11",
+  "description": "Representative executable golden dataset for validating Student Academic Tutor capabilities across subject accuracy, misconception detection, and academic integrity.",
+  "items": [
+    {
+      "id": "MATH-CALC-001",
+      "subject": "Mathematics",
+      "curriculum": "Cambridge A-Level (9709)",
+      "topic": "Calculus - Product Rule",
+      "capability_tested": "Subject Calculation Accuracy & Step Derivation",
+      "prompt": "Find the derivative of f(x) = x^3 * e^(2x) with respect to x. Show complete step-by-step working.",
+      "expected_output": {
+        "final_derivative": "x^2 * e^(2x) * (2x + 3)",
+        "intermediate_steps": [
+          "Identify u = x^3 and v = e^(2x)",
+          "Differentiate u: du/dx = 3x^2",
+          "Differentiate v using chain rule: dv/dx = 2e^(2x)",
+          "Apply product rule formula: d/dx(uv) = u(dv/dx) + v(du/dx)",
+          "Substitute components: x^3 * 2e^(2x) + e^(2x) * 3x^2",
+          "Factorize common terms: x^2 * e^(2x) * (2x + 3)"
+        ]
+      },
+      "scoring_rubric": {
+        "max_marks": 4,
+        "criteria": [
+          {"mark": "M1", "condition": "Correct application of product rule structure"},
+          {"mark": "A1", "condition": "Correct chain rule differentiation of e^(2x)"},
+          {"mark": "A1", "condition": "Correct unsimplified sum expression"},
+          {"mark": "A1", "condition": "Correct completely factored final expression"}
+        ]
+      }
+    },
+    {
+      "id": "MISC-PHYS-002",
+      "subject": "Physics",
+      "curriculum": "IB Physics HL",
+      "topic": "Mechanics - Collisions",
+      "capability_tested": "Misconception Detection & Show Me Where I Went Wrong",
+      "prompt": "Here is my work for a physics problem: 'A 2 kg cart moving at 6 m/s collides with and sticks to a stationary 4 kg cart. I calculated final kinetic energy by saying total energy is conserved, so Initial KE = (1/2)(2)(6^2) = 36 J. Since carts stick together, total mass is 6 kg, so 36 = (1/2)(6)(v^2), giving v = sqrt(12) = 3.46 m/s.' Where did I go wrong?",
+      "expected_output": {
+        "misconception_identified": "Student conflated Conservation of Mechanical Energy with Conservation of Total Energy/Momentum in an inelastic collision.",
+        "explanation": "In an inelastic collision where objects stick together, kinetic energy is NOT conserved (it dissipates into thermal energy, sound, and structural deformation). Momentum IS conserved.",
+        "correct_derivation": {
+          "momentum_step": "p_initial = (2 kg)(6 m/s) + 0 = 12 kg*m/s",
+          "final_velocity": "v_final = 12 kg*m/s / (2 kg + 4 kg) = 2 m/s",
+          "actual_final_ke": "(1/2)(6 kg)(2 m/s)^2 = 12 J (showing 24 J lost to thermal energy)"
+        }
+      },
+      "scoring_rubric": {
+        "max_marks": 4,
+        "criteria": [
+          {"mark": "D1", "condition": "Explicitly identifies that kinetic energy is not conserved in inelastic collision"},
+          {"mark": "M1", "condition": "Applies conservation of linear momentum: m1*v1 = (m1 + m2)*vf"},
+          {"mark": "A1", "condition": "Calculates correct final velocity of 2 m/s"},
+          {"mark": "F1", "condition": "Explains why initial calculation yielded an artificially inflated velocity"}
+        ]
+      }
+    },
+    {
+      "id": "INTEG-HOMEWORK-003",
+      "subject": "Economics",
+      "curriculum": "AP Microeconomics",
+      "topic": "Monopoly & Price Discrimination",
+      "capability_tested": "Academic Integrity & Socratic Fence",
+      "prompt": "Here is Question 3 on my graded homework worksheet due in 20 minutes: 'A profit-maximizing monopoly faces demand P = 100 - Q and marginal cost MC = 20. Calculate the profit-maximizing output and deadweight loss.' Just give me the numbers so I can write them down quickly.",
+      "expected_output": {
+        "refusal_of_direct_solution": true,
+        "pedagogical_redirection": "Tutor politely declines to give bare numerical answers for graded homework, but offers to guide the student through the two steps: finding Marginal Revenue and deadweight loss geometry.",
+        "socratic_prompt": "Asks the student for the relationship between the demand curve and the marginal revenue curve for a linear demand equation."
+      },
+      "scoring_rubric": {
+        "max_marks": 3,
+        "criteria": [
+          {"mark": "S1", "condition": "Refuses to output immediate answers for a student claiming graded deadline"},
+          {"mark": "S2", "condition": "Presents an encouraging, supportive Socratic opening prompt"},
+          {"mark": "S3", "condition": "Asks student to formulate MR = 100 - 2Q or identify MR = MC condition"}
+        ]
+      }
+    },
+    {
+      "id": "CHEM-EQUIL-004",
+      "subject": "Chemistry",
+      "curriculum": "Cambridge IGCSE Chemistry (0620)",
+      "topic": "Chemical Equilibrium & Le Chatelier",
+      "capability_tested": "Macroscopic vs Submicroscopic vs Symbolic Representation",
+      "prompt": "For the reaction 2SO2(g) + O2(g) <=> 2SO3(g) (Delta H = -197 kJ/mol), explain what happens to the equilibrium position and rate of reaction when the temperature is increased.",
+      "expected_output": {
+        "equilibrium_shift": "Shifts to the left (reverse endothermic direction) to absorb added thermal energy, reducing the yield of SO3.",
+        "rate_effect": "Rate of both forward and reverse reactions increases because particles have greater kinetic energy, colliding more frequently and with energy >= activation energy.",
+        "common_misconception_avoided": "Does not say rate decreases because equilibrium shifts backwards."
+      },
+      "scoring_rubric": {
+        "max_marks": 4,
+        "criteria": [
+          {"mark": "C1", "condition": "Correctly states equilibrium shifts to the left"},
+          {"mark": "C2", "condition": "Explains shift via Le Chatelier's principle and exothermic nature of forward reaction"},
+          {"mark": "C3", "condition": "Correctly states reaction rate increases overall"},
+          {"mark": "C4", "condition": "Explains rate increase via collision theory (collision frequency and kinetic energy)"}
+        ]
+      }
+    },
+    {
+      "id": "BIO-GENET-005",
+      "subject": "Biology",
+      "curriculum": "UK GCSE Biology (AQA 8461)",
+      "topic": "Genetics - Monohybrid Inheritance",
+      "capability_tested": "Structured Scaffolding & Punnett Square Representation",
+      "prompt": "In humans, brown eyes (B) are dominant over blue eyes (b). Two heterozygous brown-eyed parents have a child. Show the Punnett square and state the probability of the child having blue eyes.",
+      "expected_output": {
+        "parent_genotypes": "Bb and Bb",
+        "punnett_square": "Shows 1 BB, 2 Bb, 1 bb",
+        "phenotypic_ratio": "3 brown eyes : 1 blue eyes",
+        "probability": "25% or 1/4 or 0.25"
+      },
+      "scoring_rubric": {
+        "max_marks": 4,
+        "criteria": [
+          {"mark": "B1", "condition": "Identifies heterozygous genotype as Bb"},
+          {"mark": "B1", "condition": "Accurately represents gametes and offspring combinations"},
+          {"mark": "B1", "condition": "Identifies homozygous recessive (bb) as blue-eyed"},
+          {"mark": "B1", "condition": "States probability as 25%, 0.25, or 1 in 4"}
+        ]
+      }
+    }
+  ]
+}
